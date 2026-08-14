@@ -102,9 +102,12 @@ header {
 #btn_agendar_topo {
     background-color: var(--nova-cor-terciaria);
     color: var(--nova-cor-fundo-1);
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    border-radius: 2px;
+    padding: 10px 30px;   
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 
 
 }
@@ -233,7 +236,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: color-mix(in srgb, var(--nova-cor-terciaria) 50%, transparent);
+    background: linear-gradient(to right, #9b4149 ,#e77c83 );
     color: var(--nova-cor-fundo-1);
     display: flex;
     align-items: center;
@@ -273,8 +276,8 @@ header {
     margin: 0px auto;
     text-align: center;
     cursor: pointer;
-    background-color: color-mix(in srgb, var(--cor-alternativa-2) 50%, transparent);
-    color: #fff;
+    background-color: #f3e5dc;
+    color: #222;
     font-family: "Junge", cursive;
     font-style: italic;
     font-size: 1.2rem;
@@ -285,7 +288,7 @@ header {
 
 
 .btn_processo:hover {
-    background-color: var(--cor-alternativa-2);
+    background-color: #e9e1dc;
 }
 
 
@@ -409,7 +412,8 @@ header {
     }
 
     .titulo_hero {
-        font-size: 2.5rem;
+        width: 45%;
+        font-size: 3rem;
     }
 
     .texto_hero {
@@ -477,6 +481,7 @@ header {
 
     #btn_agendar_topo {
         font-size: .7rem;
+        padding: 5px 20px;
     }
 
     #hero {
