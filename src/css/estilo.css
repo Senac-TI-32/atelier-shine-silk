@@ -84,12 +84,19 @@ header {
 }
 
 .menu a:hover {
-    color: var(--nova-cor-texto);
+
+    box-shadow: 2px 3px 15px #ddd;
+    border-radius: 5px;
+    transition: all .5s;
+    /* background-color: var(--cor-secundaria); */
+    /* border-bottom: 3px solid var(--nova-cor-terciaria); */
+
 }
 
 .menu a {
     text-decoration: none;
     color: var(--cor-texto-alternativa);
+    padding: 10px;
 }
 
 #btn_agendar_topo {
@@ -282,35 +289,35 @@ header {
 }
 
 
-#sobre{
+#sobre {
     padding: 100px 15px;
 }
 
-.container_sobre{
+.container_sobre {
     max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;
 }
 
-.itens_sobre{
+.itens_sobre {
     text-align: left;
     width: 50%;
     padding: 0px 15px;
 }
 
-.itens_sobre img{
+.itens_sobre img {
     width: 100%;
     border-radius: 0px 25px 0px 25px;
 }
 
-.titulo_sobre{
+.titulo_sobre {
     font-size: 2.9rem;
-    color: var(--nova-cor-terciaria);   
+    color: var(--nova-cor-terciaria);
 
 }
 
-.texto_sobre{
+.texto_sobre {
     margin: 40px 0px;
     line-height: 1.5;
     font-weight: 200;
@@ -365,12 +372,12 @@ header {
 
     }
 
-    .titulo_sobre{
+    .titulo_sobre {
         width: 85%;
         font-size: 1.5rem;
-    }    
+    }
 
-    .texto_sobre{
+    .texto_sobre {
         font-size: .7rem;
     }
 }
@@ -431,15 +438,15 @@ header {
         font-size: 1.5em;
     }
 
-    .titulo_sobre{
+    .titulo_sobre {
         font-size: 2.5rem;
-    }    
+    }
 
-    .texto_sobre{
+    .texto_sobre {
         font-size: 1rem;
     }
 
-   
+
 
 
 
@@ -453,7 +460,7 @@ header {
 
 @media(max-width:767px) {
 
-    
+
     #container_header {
         width: 100%;
         justify-content: space-between;
@@ -519,7 +526,7 @@ header {
     }
 
     #servicos {
-        margin-top:100px;
+        margin-top: 100px;
     }
 
     .titulo_inicial_servicos {
@@ -543,33 +550,33 @@ header {
         gap: 0;
     }
 
-    #sobre{
+    #sobre {
         margin: 0;
-        padding:50px 20px;
+        padding: 50px 20px;
     }
 
-    .container_sobre{
-        width:100%;
+    .container_sobre {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
 
-    .itens_sobre{
+    .itens_sobre {
         width: 100%;
         padding: 0px;
     }
 
-    .titulo_sobre{
+    .titulo_sobre {
         width: 95%;
         font-size: 2rem;
         margin: auto;
     }
 
-    .texto_sobre{
+    .texto_sobre {
         padding: 0;
     }
 
-    .itens_sobre img{
+    .itens_sobre img {
         width: 100%;
 
     }
