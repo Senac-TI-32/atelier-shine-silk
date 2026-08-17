@@ -256,6 +256,14 @@ header {
     margin: 10px 0px;
 }
 
+
+    .elegancia_fala{
+        font-size: 1rem;
+        font-style: italic;
+        color: var(--cor-destaque);
+        font-weight: 200;
+    }
+
 .texto_servicos {
     margin-bottom: 0px;
     font-weight: 200;
@@ -336,7 +344,6 @@ header {
     width: 85%;
     margin: auto;
     border-top: 1px solid #ddd;
-   
     
 }
 
@@ -359,9 +366,6 @@ header {
     margin: 10px 0px;
     color: var(--cor-destaque);
 }
-
-
-
 
 
 .prova_social{
@@ -435,9 +439,9 @@ header {
 
     .texto_servicos{
         width: 100%;
-        font-size: .8rem;
-        
+        font-size: .8rem;        
     }
+
 
     .titulo_clientes, .prova_social{
         text-align: center;
@@ -446,11 +450,32 @@ header {
     .titulo_clientes{
         padding-bottom: 50px;
     }
-
     
 
     .prova_social{
         padding-top: 50px;
+    }
+
+    #depoimentos{
+        width: 98%;
+    }
+
+
+    .container_depoimentos{
+        flex-wrap: wrap;
+        
+    }   
+    
+    
+
+    .box_depoimentos{
+        width:46%;
+        margin: 15px auto;
+    }
+
+    .box3_depoimentos{
+        flex-grow: 1;
+        
     }
 }
 
@@ -517,6 +542,12 @@ header {
         
     }
 
+    
+    .elegancia_fala{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }   
+
     .titulo_sobre {
         font-size: 2.5rem;
     }
@@ -525,16 +556,33 @@ header {
         font-size: 1rem;
     }
 
-    
+    #depoimentos{
+        width: 95%;
+        
+    }
+
+    .container_depoimentos{
+        flex-wrap: nowrap;
+        
+    }   
+
+    .box_depoimentos{
+        width:30%;
+        margin: 15px auto;
+    }
+
+    .box3_depoimentos{
+        flex-grow: 0;
+        
+    }
+
+}
 
 
-
-
-
-
-
-
-
+@media(min-width:1200px){
+    #depoimentos{
+       width: 85%;
+    }
 }
 
 /* mobile ------------------------------------------------*/
@@ -665,6 +713,7 @@ header {
 
     #depoimentos{
         padding: 20px;
+        width: 100%;
     }
 
     .container_depoimentos{
