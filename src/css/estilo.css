@@ -195,7 +195,7 @@ header {
 
 #servicos {
     background-color: var(--nova-cor-fundo-1);
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 
@@ -295,7 +295,7 @@ header {
 
 
 #sobre {
-    padding: 50px 15px;
+    padding: 100px 15px;
 }
 
 .container_sobre {
