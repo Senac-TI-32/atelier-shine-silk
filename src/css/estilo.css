@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -328,8 +331,26 @@ header {
     font-weight: 200;
 }
 
+#depoimentos{   
+    width: 85%;
+    margin: auto;
+    border-top: 1px solid #ddd;
+   
+    
+}
+
 .container_depoimentos{
     display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.box_depoimentos{
+    margin: 5px 10px;
+    background-color: var(--nova-cor-fundo-1);
+    color: var(--cor-texto-alternativa);
+    text-align: center;
+    padding: 45px;
 }
 
 .estrelinhas_depoimentos{
@@ -337,6 +358,10 @@ header {
     margin: 10px 0px;
     color: var(--cor-destaque);
 }
+
+
+
+
 
 .prova_social{
     color: var(--cor-destaque);

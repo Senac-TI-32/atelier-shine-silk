@@ -16,7 +16,7 @@ colors:
   outline: '#887272'
   outline-variant: '#dbc0c1'
   surface-tint: '#9b4149'
-  primary: '#45000e'
+  primary: '#070606'
   on-primary: '#ffffff'
   primary-container: '#631621'
   on-primary-container: '#e77c83'
