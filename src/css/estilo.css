@@ -195,7 +195,7 @@ header {
 
 #servicos {
     background-color: var(--nova-cor-fundo-1);
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -295,7 +295,7 @@ header {
 
 
 #sobre {
-    padding: 100px 15px;
+    padding: 50px 15px;
 }
 
 .container_sobre {
@@ -337,6 +337,18 @@ header {
     margin: 10px 0px;
     color: var(--cor-destaque);
 }
+
+.prova_social{
+    color: var(--cor-destaque);
+}
+
+
+.dizem{
+    color: var(--cor-destaque);
+    font-weight: 600;
+    font-style: italic;
+}
+
 
 
 
@@ -383,8 +395,7 @@ header {
     .itens_servicos {
         object-fit: cover;
         height: 300px;
-        width: 250px;
-
+        
     }
 
     .titulo_sobre {
@@ -394,6 +405,26 @@ header {
 
     .texto_sobre {
         font-size: .7rem;
+    }
+
+    .texto_servicos{
+        width: 100%;
+        font-size: .8rem;
+        
+    }
+
+    .titulo_clientes, .prova_social{
+        text-align: center;
+    }
+
+    .titulo_clientes{
+        padding-bottom: 50px;
+    }
+
+    
+
+    .prova_social{
+        padding-top: 50px;
     }
 }
 
@@ -454,6 +485,12 @@ header {
         font-size: 1.5em;
     }
 
+    .texto_servicos{
+        width: 90%;
+        font-size: 1rem;
+        
+    }
+
     .titulo_sobre {
         font-size: 2.5rem;
     }
@@ -461,6 +498,8 @@ header {
     .texto_sobre {
         font-size: 1rem;
     }
+
+    
 
 
 
