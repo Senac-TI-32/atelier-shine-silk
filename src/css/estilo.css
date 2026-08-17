@@ -328,6 +328,16 @@ header {
     font-weight: 200;
 }
 
+.container_depoimentos{
+    display: flex;
+}
+
+.estrelinhas_depoimentos{
+    display: block;
+    margin: 10px 0px;
+    color: var(--cor-destaque);
+}
+
 
 
 
@@ -586,6 +596,18 @@ header {
     .itens_sobre img {
         width: 100%;
 
+    }
+
+    #depoimentos{
+        padding: 20px;
+    }
+
+    .container_depoimentos{
+        flex-direction: column;
+    }
+
+    .box_depoimentos{
+        margin: 25px 0px;
     }
 
 
