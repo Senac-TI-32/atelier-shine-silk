@@ -1,5 +1,6 @@
 
-const secoes = ["hero", "sobre", "servicos", "galeria", "precos", "depoimentos"]
+const secoes = ["hero", "servicos", "sobre", "depoimentos", "rodape"]
+
 
 
 

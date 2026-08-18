@@ -344,6 +344,7 @@ header {
     width: 85%;
     margin: auto;
     border-top: 1px solid #ddd;
+    margin-bottom: 100px;
     
 }
 
@@ -379,6 +380,62 @@ header {
     font-style: italic;
 }
 
+#rodape{
+    background: linear-gradient(to bottom, #fffbf8, #f4e3d1) ;
+    margin-top: 150px;
+   
+    
+}
+
+
+.container_footer{
+    max-width: 1160px;
+    margin: auto;
+}
+
+.navegacao, .contato{
+    color: var(--cor-alternativa-2);
+    font-size: 1.5rem;
+}
+
+.itens_footer li{
+    list-style: none;
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 10px 0px;
+}
+
+.itens_footer a, .texto_contato{
+    text-decoration: none;
+    color: var(--cor-texto-alternativa);
+}
+
+.itens_footer a:hover{
+    color: var(--cor-alternativa-2);
+    transition: all .5s;
+}
+
+
+.contato{
+    margin-bottom: 10px;
+}
+
+.texto_contato{
+    line-height: 2;
+}
+
+
+#logo_footer{
+    width: 250px;
+}
+
+.texto_logo_footer{
+    font-family: "Junge", cursive;
+    font-style: italic;
+    color: var(--nova-cor-terciaria);
+    width: 70%;
+    margin: 10px 0px;
+}
 
 
 
@@ -458,6 +515,7 @@ header {
 
     #depoimentos{
         width: 98%;
+        
     }
 
 
@@ -561,6 +619,10 @@ header {
         
     }
 
+    .prova_social{
+        padding-top: 130px;
+    }
+
     .container_depoimentos{
         flex-wrap: nowrap;
         
@@ -575,6 +637,21 @@ header {
         flex-grow: 0;
         
     }
+
+
+    .container_footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0px;
+    }
+
+    .itens_footer{
+       padding-top: 125px;
+       
+    }
+
+   
+    
 
 }
 
