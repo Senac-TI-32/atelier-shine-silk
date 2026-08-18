@@ -239,7 +239,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #f3e5dc;   
+    background-color: #f3e5dc;
     color: var(--nova-cor-terciaria);
     display: flex;
     align-items: center;
@@ -249,6 +249,7 @@ header {
     font-style: italic;
     margin-top: 20px;
     box-shadow: 2px 3px 5px #ddd;
+    
 
 }
 
@@ -257,12 +258,12 @@ header {
 }
 
 
-    .elegancia_fala{
-        font-size: 1rem;
-        font-style: italic;
-        color: var(--cor-destaque);
-        font-weight: 200;
-    }
+.elegancia_fala{
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--cor-destaque);
+    font-weight: 200;
+}
 
 .texto_servicos {
     margin-bottom: 0px;
@@ -335,17 +336,29 @@ header {
 
 .texto_sobre {
     margin: 40px 0px;
-    line-height: 1.5;
-    
+    line-height: 1.5;    
     font-weight: 200;
+}
+
+.icone_sobre{
+    width: 50px !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 #depoimentos{   
     width: 85%;
     margin: auto;
-    border-top: 1px solid #ddd;
     margin-bottom: 100px;
     
+}
+
+.icone_depoimentos{
+    width: 300px !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .container_depoimentos{
@@ -448,6 +461,14 @@ header {
         justify-content: space-evenly;
     }
 
+    #btn_agendar_topo {
+       
+        padding: 5px 20px;   
+        font-size: .8rem;
+    
+    
+    }
+
     .container_hero {
         justify-content: center;
         width: 90%;
@@ -505,7 +526,7 @@ header {
     }
 
     .titulo_clientes{
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
     
 
@@ -535,6 +556,24 @@ header {
         flex-grow: 1;
         
     }
+
+    #rodape{
+        padding: 50px 0px;
+    }
+
+    .container_footer{
+        text-align: center;
+    }
+
+    .itens_footer{
+        padding: 25px 0px;
+    }
+
+    .texto_logo_footer{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
 }
 
 
@@ -554,6 +593,8 @@ header {
     .menu li {
         font-size: 1rem;
     }
+
+    
 
     .container_hero {
         margin: 100px auto;
@@ -578,6 +619,10 @@ header {
 
     .descricao_numeros_hero {
         font-size: 1rem;
+    }
+
+    .icone_sobre{
+        width: 80px!important;
     }
 
     .container_servicos {
@@ -616,6 +661,7 @@ header {
 
     #depoimentos{
         width: 95%;
+        border-top: 1px solid #ddd;
         
     }
 
@@ -643,12 +689,19 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 50px 0px;
+        text-align: left;
     }
 
     .itens_footer{
        padding-top: 125px;
        
     }
+
+    .texto_logo_footer{
+        width: 70%;
+        text-align: left;
+        margin-top: 10px;
+    }    
 
    
     
@@ -793,12 +846,34 @@ header {
         width: 100%;
     }
 
+    .titulo_clientes, .prova_social{
+        text-align: center;
+    }
+
     .container_depoimentos{
         flex-direction: column;
     }
 
     .box_depoimentos{
         margin: 25px 0px;
+    }
+
+    #rodape{
+        padding: 50px 0px;
+    }
+
+    .container_footer{
+        text-align: center;
+    }
+
+    .itens_footer{
+        padding: 25px 0px;
+    }
+
+    .texto_logo_footer{
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 
 
