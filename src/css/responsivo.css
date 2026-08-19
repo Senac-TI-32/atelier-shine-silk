@@ -185,11 +185,13 @@
     
 
     .prova_social{
+        font-size: 1.5rem;
         padding-top: 130px;
     }
 
-    .titulo_clientes{
-        
+    .titulo_clientes{        
+        margin-top: 0;
+        padding-top: 0;
         padding-bottom: 50px;
         font-size: 2.5rem;
     }

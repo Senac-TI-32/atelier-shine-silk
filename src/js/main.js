@@ -25,6 +25,9 @@ async function montarPagina() {
 
 montarPagina()
 
+
+// Função para mudar o slide dos depoimentos
+
 let indiceAtual = 0;
 
 function mudarSlide(direcao) {
