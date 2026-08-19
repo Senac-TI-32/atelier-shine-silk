@@ -1,0 +1,450 @@
+@media(min-width:768px) {
+
+
+    #container_header {
+        justify-content: space-evenly;
+    }
+
+    #btn_agendar_topo {
+       
+        padding: 5px 20px;   
+        font-size: .8rem;
+    
+    
+    }
+
+    .container_hero {
+        justify-content: center;
+        width: 90%;
+    }
+
+    .conteudo_hero img {
+        width: 95%;
+        border-radius: 0;
+    }
+
+    .titulo_hero {
+        font-size: 1rem;
+    }
+
+    .texto_hero {
+        line-height: 1;
+    }
+
+    .numeros_container {
+        justify-content: flex-start;
+    }
+
+    .texto_hero {
+        font-weight: 200;
+    }
+
+
+    .descricao_numeros_hero {
+        font-size: .7rem;
+    }
+
+    .itens_servicos {
+        object-fit: cover;
+        height: 300px;
+        
+    }
+
+    .titulo_sobre {
+        width: 85%;
+        font-size: 1.5rem;
+    }
+
+    .texto_sobre {
+        font-size: .7rem;
+    }
+
+    .texto_servicos{
+        width: 100%;
+        font-size: .8rem;        
+    }
+
+
+    .titulo_clientes, .prova_social{
+        text-align: center;
+    }
+
+    .titulo_clientes{
+        padding-bottom: 0px;
+    }
+    
+
+    .prova_social{
+        padding-top: 50px;
+    }
+
+    
+
+    #rodape{
+        padding: 50px 0px;
+    }
+
+    .container_footer{
+        text-align: center;
+    }
+
+    .itens_footer{
+        padding: 25px 0px;
+    }
+
+    .texto_logo_footer{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media(min-width:1024px) {
+
+    #container_header {
+        justify-content: space-between;
+    }
+
+    #logo_desktop {
+        width: 200px;
+    }
+
+    .menu li {
+        font-size: 1rem;
+    }
+
+    
+
+    .container_hero {
+        margin: 100px auto;
+    }
+
+    .conteudo_hero img {
+        width: 95%;
+    }
+
+    .titulo_hero {
+        
+        font-size: 3rem;
+    }
+
+    .texto_hero {
+        line-height: 2;
+    }
+
+    .numeros_container {
+        justify-content: space-between;
+    }
+
+    .descricao_numeros_hero {
+        font-size: 1rem;
+    }
+
+    .icone_sobre{
+        width: 80px!important;
+    }
+
+    .container_servicos {
+        display: flex;
+    }
+
+    .itens_servicos {
+        width: 100%;
+    }
+
+    .elipse_servicos {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5em;
+    }
+
+    .texto_servicos{
+        width: 90%;
+        font-size: 1rem;
+        
+    }
+
+    
+    .elegancia_fala{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }   
+
+    .titulo_sobre {
+        font-size: 2.5rem;
+    }
+
+    .texto_sobre {
+        font-size: 1rem;
+    }
+
+    
+
+    .prova_social{
+        padding-top: 130px;
+    }
+
+    .titulo_clientes{
+        
+        padding-bottom: 50px;
+        font-size: 2.5rem;
+    }
+
+    
+
+
+    .container_footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0px;
+        text-align: left;
+    }
+
+    .itens_footer{
+       padding-top: 125px;
+       
+    }
+
+    .texto_logo_footer{
+        width: 70%;
+        text-align: left;
+        margin-top: 10px;
+    }    
+
+   
+    
+
+}
+
+
+@media(min-width:1200px){
+    
+    
+}
+
+/* mobile ------------------------------------------------*/
+
+@media(max-width:767px) {
+
+
+    #container_header {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .itens_header {
+        margin: 0px 20px;
+    }
+
+    .menu {
+
+        display: none;
+    }
+
+    #btn_agendar_topo {
+        font-size: .7rem;
+        padding: 5px 20px;
+    }
+
+    #hero {
+        margin: 0;
+    }
+
+    .container_hero {
+        margin: 80px auto;
+    }
+
+
+    .titulo_hero {
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+
+    .texto_hero {
+        width: 100%;
+        font-weight: 200;
+    }
+
+
+    .container_hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo_hero {
+        flex-direction: column;
+
+    }
+
+    .conteudo_hero img {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+
+    .numeros_hero {
+        padding: 5px 15px;
+    }
+
+    .descricao_numeros_hero {
+        font-size: .7rem;
+    }
+
+    #servicos {
+        margin-top: 100px;
+    }
+
+    .titulo_inicial_servicos {
+        font-size: 1.5rem;
+    }
+
+
+    .container_servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 0px;
+    }
+
+    .itens_servicos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    #sobre {
+        margin: 0;
+        padding: 50px 20px;
+    }
+
+    .container_sobre {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itens_sobre {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .titulo_sobre {
+        width: 95%;
+        font-size: 2rem;
+        margin: auto;
+    }
+
+    .texto_sobre {
+        padding: 0;
+    }
+
+    .itens_sobre img {
+        width: 100%;
+
+    }
+
+    #depoimentos {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 30px 0 !important;
+        margin: 0 auto !important;
+      }
+    
+      .carousel_container {
+        width: 100% !important;
+      }
+    
+      .carousel_wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important; /* Esconde o que passa das bordas */
+      }
+    
+      /* 
+         AQUI ESTÁ O SEGREDO: 
+         Transforma o contêiner em uma linha rolável com o dedo
+      */
+      .container_depoimentos {
+        width: 100% !important;
+        overflow-x: auto !important; /* Permite rolar para os lados no mobile */
+        scroll-snap-type: x mandatory !important; /* Força o bloco a travar na tela */
+        scroll-behavior: smooth !important; /* Deixa o deslize suave */
+        -webkit-overflow-scrolling: touch; /* Melhora a performance no iPhone (iOS) */
+      }
+    
+      /* Oculta a barra de rolagem horizontal padrão do sistema */
+      .container_depoimentos::-webkit-scrollbar {
+        display: none !important;
+      }
+    
+      .box_depoimentos {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        flex-shrink: 0 !important;
+        padding: 25px 20px !important;
+        box-sizing: border-box !important;
+        scroll-snap-align: start !important; /* Alinha o bloco perfeitamente ao parar o dedo */
+      }
+    
+      .texto_depoimento p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    
+      .texto_depoimento.expandido p {
+        display: block;
+        overflow: visible;
+      }
+    
+      .btn_ler_mais {
+        display: inline-block;
+      }
+    
+      /* REMOVE COMPLETAMENTE AS SETAS NO MOBILE */
+      .carousel_controls {
+        display: none !important;
+      }
+      
+
+
+
+    #rodape{
+        padding: 50px 0px;
+    }
+
+    .container_footer{
+        text-align: center;
+    }
+
+    .itens_footer{
+        padding: 25px 0px;
+    }
+
+    .texto_logo_footer{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+
+
+
+
+}

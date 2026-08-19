@@ -1,0 +1,71 @@
+header {
+    background: linear-gradient(to left, #f4e3d1, #fcf5ed 50%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #eee;
+}
+
+#container_header {
+    max-width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#logo_desktop {
+    width: 120px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    list-style: none;
+    font-weight: 400;
+    font-size: .8rem;
+
+}
+
+.menu a:hover {
+
+    box-shadow: 2px 3px 15px #ddd;
+    border-radius: 5px;
+    transition: all .5s;
+    /* background-color: var(--cor-secundaria); */
+    /* border-bottom: 3px solid var(--nova-cor-terciaria); */
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor-texto-alternativa);
+    padding: 10px;
+}
+
+#btn_agendar_topo {
+    background-color: var(--nova-cor-terciaria);
+    color: var(--nova-cor-fundo-1);
+    padding: 10px 30px;   
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+
+}
+
+#btn_agendar_topo:hover {
+    background-color: var(--cor-alternativa-2);
+    box-shadow: 0px 0px 5px var(--cor-secundaria);
+    color: var(--nova-cor-fundo-1);
+    
+}

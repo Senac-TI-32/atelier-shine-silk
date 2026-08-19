@@ -1,0 +1,59 @@
+#sobre {
+    padding: 100px 15px;
+}
+
+.container_sobre {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.itens_sobre {
+    text-align: left;
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.itens_sobre img {
+    width: 100%;
+    border-radius: 0px 25px 0px 25px;
+}
+
+.titulo_sobre {
+    font-size: 2.9rem;
+    color: var(--nova-cor-terciaria);
+
+}
+
+.texto_sobre {
+    margin: 40px 0px;
+    line-height: 1.5;    
+    font-weight: 200;
+}
+
+.icone_sobre{
+    width: 50px !important;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.prova_social, .titulo_clientes{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+    color: var(--cor-texto-alternativa);
+}
+
+.prova_social{
+    color: var(--cor-destaque);
+    
+}
+
+
+.dizem{
+    color: var(--cor-destaque);
+    font-weight: 600;
+    font-style: italic;
+}

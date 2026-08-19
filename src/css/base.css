@@ -1,0 +1,70 @@
+
+@import url('header.css');
+@import url('hero.css');
+@import url('servicos.css');
+@import url('sobre.css');
+@import url('depoimentos.css');
+@import url('rodape.css');
+@import url('responsivo.css');
+
+
+
+
+/*Fontes Google-----------------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+:root {
+    --cor-fundo-1: #232f33;
+    --cor-fundo-2: #1A2326;
+    --cor-secundaria: #EDE8D0;
+    --cor-destaque: #C2A312;
+    --cor-texto: #ccc;
+
+    --nova-cor-fundo-1: #fcf5ed;
+    --nova-cor-fundo-2: #f4e3d1;
+    --nova-cor-secundaria: #f1c1b7;
+    --nova-cor-terciaria: #8e3030;
+    --nova-cor-destaque: #c38f44;
+    --cor-alternativa-1: #ffb3b6;
+    --cor-alternativa-2: #9b4149;
+    --cor-texto-alternativa: #222;
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Junge", cursive;
+}
+
+p,
+a,
+span,
+li {
+    font-family: 'inter', sans-serif;
+    text-decoration: none;
+}
+
+
+
