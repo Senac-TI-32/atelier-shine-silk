@@ -1,0 +1,72 @@
+#hero {
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+
+.container_hero {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
+.conteudo_hero {
+    color: var(--cor-texto);
+    width: 100%;
+}
+
+.conteudo_hero img {
+    width: 100%;
+    box-shadow: 1px 3px 15px #999;
+    border-radius: 0px 20px 0px 20px;
+}
+
+
+
+.texto_hero,
+.titulo_hero {
+    padding: 10px 15px;
+
+}
+
+
+.titulo_hero {
+    color: var(--nova-cor-destaque);
+    font-size: 2.5rem;
+}
+
+.texto_hero {
+    line-height: 2;
+    color: var(--cor-texto-alternativa);
+}
+
+
+/* Container principal (fundo e disposição em linha) */
+.numeros_container {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+
+.numeros_hero {
+    font-family: "Playfair Display", serif;
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.8rem;
+}
+
+
+.descricao_numeros_hero {
+    font-family: "Playfair Display", serif;
+    padding: 0px 15px;
+    font-size: .8rem;
+    color: #222;
+
+}

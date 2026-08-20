@@ -1,23 +1,63 @@
 
     <p class="prova_social">Prova social</p>
     <h2 class="titulo_clientes">O que nossos clientes <span class="dizem">dizem</span></h2>
-    <img src="../src/img/icone-2.png" alt="Ícone de depoimento" class="icone_depoimentos">
-    <div class="container_depoimentos">           
+    <!-- <img src="../src/img/icone-2.png" alt="Ícone de depoimento" class="icone_depoimentos"> -->
 
-        <!--Box depoimentos-->
 
-        <div class="box_depoimentos">
-            <p>"O terno que recebi mudou completamente a percepção que as pessoas têm de mim nas reuniões. Caimento impecável, tecido incrível. Já encomendei o segundo."</p>
-            <span class="estrelinhas_depoimentos">★★★★★</span>
-            <p> Dr. Ricardo Almeida <br> Advogado Sênior, São Paulo</p>
+    <div id="depoimentos">
+        <div class="carousel_container">
+          
+          <div class="carousel_wrapper">
+            
+            <!-- O carrossel de depoimentos propriamente dito -->
+            <div class="container_depoimentos" id="trackDepoimentos">
+
+                <div class="box_depoimentos">
+                    <div class="texto_depoimento">
+                      <p>O terno que recebi mudou completamente a percepção que as pessoas têm de mim nas reuniões. Caimento impecável, tecido incrível. Já encomendei o segundo.</p>
+                    </div>
+                    <button class="btn_ler_mais" onclick="toggleTexto(this)">Ler mais...</button>
+                    
+                    <span class="estrelinhas_depoimentos">★★★★★</span>
+                    <p>Dr. Ricardo Almeida <br><span>Advogado Sênior, São Paulo</span></p>
+                  </div>
+
+                  <div class="box_depoimentos">
+                    <div class="texto_depoimento">
+                      <p>O terno que recebi mudou completamente a percepção que as pessoas têm de mim nas reuniões. Caimento impecável, tecido incrível. Já encomendei o segundo.</p>
+                    </div>
+                    <button class="btn_ler_mais" onclick="toggleTexto(this)">Ler mais...</button>
+                    
+                    <span class="estrelinhas_depoimentos">★★★★★</span>
+                    <p>Dr. Ricardo Almeida <br><span>Advogado Sênior, São Paulo</span></p>
+                  </div>
+
+                  <div class="box_depoimentos">
+                    <div class="texto_depoimento">
+                      <p>O terno que recebi mudou completamente a percepção que as pessoas têm de mim nas reuniões. Caimento impecável, tecido incrível. Já encomendei o segundo.</p>
+                    </div>
+                    <button class="btn_ler_mais" onclick="toggleTexto(this)">Ler mais...</button>
+                    
+                    <span class="estrelinhas_depoimentos">★★★★★</span>
+                    <p>Dr. Ricardo Almeida <br><span>Advogado Sênior, São Paulo</span></p>
+                  </div>
+            </div>
+            
+            <!-- Container das Setas posicionado embaixo -->
+            <div class="carousel_controls">
+              <button class="carousel_btn prev_btn" onclick="mudarSlide(-1)">&#10094;</button>
+              <button class="carousel_btn next_btn" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+            
+          </div>
+      
         </div>
+      </div>
+      
+      
 
-        <div class="box_depoimentos">
-            <p>"Me senti como nunca na minha vida. O processo foi cuidadoso, atencioso e o resultado superou todas as expectativas. Minha noiva ficou sem palavras."</p>
-            <span class="estrelinhas_depoimentos">★★★★★</span>
-            <p>Thiago Fernandes <br> Noivo — Casamento Jan. 2025</p>
-        </div>
 
+<<<<<<< HEAD
         <div class="box_depoimentos box3_depoimentos">
             <p>"Há 12 anos sou cliente exclusivo. A consistência da qualidade é incomparável. Em cada peça, a mesma precisão e a mesma atenção ao que importa."</p>
             <span class="estrelinhas_depoimentos">★★★★★</span>
@@ -58,3 +98,43 @@
             <p>Carlos Eduardo M. <br> CEO, Grupo MK Investimentos</p>
        </div>
     </div>
+=======
+      <!--
+        
+          
+          /* ========================================================
+             MEDIA QUERIES - Ajustes finos para Celular
+             ======================================================== */
+          @media (max-width: 600px) {
+            .carousel_wrapper {
+              padding: 10px 10px; /* Remove o recuo das setas no celular */
+            }
+          
+            .box_depoimentos {
+              padding: 30px 20px;
+            }
+          
+            .box_depoimentos p {
+              font-size: 1rem;
+            }
+          
+            /* Move as setas para baixo do bloco no celular para economizar espaço lateral */
+            .carousel_btn {
+              position: relative;
+              top: auto;
+              transform: none;
+              display: inline-flex;
+              margin: 20px 10px 0 10px;
+            }
+            
+            .carousel_wrapper {
+              text-align: center; /* Centraliza os botões abaixo do bloco */
+              overflow: visible;  /* Garante que os botões apareçam abaixo */
+            }
+            
+            .prev_btn { left: auto; }
+            .next_btn { right: auto; }
+          }
+          
+      -->
+>>>>>>> 47349b34580b73c19a9da39fa8b492409eef8093
