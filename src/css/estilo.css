@@ -347,10 +347,17 @@ header {
     margin-bottom: 50px;
 }
 
-#depoimentos{   
-    width: 85%;
+
+/* Carrossel------------------------------------------------- */
+
+#depoimentos{                    
+    width: 100%;
     margin: auto;
     margin-bottom: 100px;
+    background-color: #f1c1b7;
+    padding-bottom: 150px;
+    
+
     
 }
 
@@ -362,13 +369,17 @@ header {
 }
 
 .container_depoimentos{
-    display: flex;
     max-width: 1200px;
-    margin: auto;
+    overflow: hidden;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    
 }
 
 .box_depoimentos{
-    margin: 5px 10px;
     background-color: var(--nova-cor-fundo-1);
     color: var(--cor-texto-alternativa);
     text-align: center;
@@ -534,11 +545,9 @@ header {
         padding-top: 50px;
     }
 
-    #depoimentos{
-        width: 98%;
-        
-    }
 
+    /* Carrossel----------------------- */
+    
 
     .container_depoimentos{
         flex-wrap: wrap;
@@ -548,7 +557,6 @@ header {
     
 
     .box_depoimentos{
-        width:46%;
         margin: 15px auto;
     }
 
@@ -659,8 +667,9 @@ header {
         font-size: 1rem;
     }
 
+    /* Carrossel---------------------------------------------- */
+
     #depoimentos{
-        width: 95%;
         border-top: 1px solid #ddd;
         
     }
@@ -670,13 +679,14 @@ header {
     }
 
     .container_depoimentos{
+        margin: auto;
         flex-wrap: nowrap;
         
     }   
 
     .box_depoimentos{
-        width:30%;
-        margin: 15px auto;
+        background-color: #ddd;
+        
     }
 
     .box3_depoimentos{
@@ -710,9 +720,7 @@ header {
 
 
 @media(min-width:1200px){
-    #depoimentos{
-       width: 85%;
-    }
+   
 }
 
 /* mobile ------------------------------------------------*/
