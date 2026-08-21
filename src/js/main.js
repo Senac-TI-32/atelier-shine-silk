@@ -46,6 +46,11 @@ function mudarSlide(direcao) {
   track.style.transform = `translateX(-${indiceAtual * 50}%)`;
 }
 
+
+
+
+
+
 // Função para o botão "Ler Mais" no Mobile
 function toggleTexto(botao) {
   const box = botao.closest('.box_depoimentos');
@@ -61,8 +66,24 @@ function toggleTexto(botao) {
 }
 
 
-// Opcional: Passar o slide automaticamente a cada 5 segundos
 
-// setInterval(() => {
-//   mudarSlide(1);
+
+function slidemuda(){
+  
+  if(window.innerWidth > 767) {
+    setInterval(() => {
+      mudarSlide(1);
+    }, 5000);
+  }
+}
+
+slidemuda();
+
+
+//erro
+// if(window.innerWidth > 767) {
+
+//  setInterval(() => {
+//    mudarSlide(1);
 // }, 5000);
+// }
