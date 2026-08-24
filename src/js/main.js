@@ -63,6 +63,16 @@ function toggleTexto(botao) {
 
 // Opcional: Passar o slide automaticamente a cada 5 segundos
 
-// setInterval(() => {
-//   mudarSlide(1);
-// }, 5000);
+function desktopSlide(){
+  if(window.screen.width > 767){
+     setInterval(() => {
+   mudarSlide(1);
+ },5000);
+  }
+   
+  
+  }
+
+  desktopSlide()
+
+ 

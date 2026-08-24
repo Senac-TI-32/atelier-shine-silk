@@ -21,6 +21,10 @@ header {
     width: 120px;
 }
 
+#icon-whatsapp{
+    width: 30px;
+}
+
 
 .menu {
     display: flex;
