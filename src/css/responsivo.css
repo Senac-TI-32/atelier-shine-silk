@@ -1,3 +1,4 @@
+
 @media(min-width:768px) {
 
 
@@ -6,11 +7,11 @@
     }
 
     #btn_agendar_topo {
-       
-        padding: 5px 20px;   
+
+        padding: 5px 20px;
         font-size: .8rem;
-    
-    
+
+
     }
 
     .container_hero {
@@ -47,7 +48,7 @@
     .itens_servicos {
         object-fit: cover;
         height: 300px;
-        
+
     }
 
     .titulo_sobre {
@@ -59,44 +60,63 @@
         font-size: .7rem;
     }
 
-    .texto_servicos{
+    .texto_servicos {
         width: 100%;
-        font-size: .8rem;        
+        font-size: .8rem;
     }
 
 
-    .titulo_clientes, .prova_social{
+    .titulo_clientes,
+    .prova_social {
         text-align: center;
     }
 
-    .titulo_clientes{
+    .titulo_clientes {
         padding-bottom: 0px;
     }
-    
 
-    .prova_social{
+
+    .prova_social {
         padding-top: 50px;
     }
 
-    
 
-    #rodape{
+
+    #rodape {
         padding: 50px 0px;
     }
 
-    .container_footer{
+    .container_footer {
         text-align: center;
     }
 
-    .itens_footer{
+    .itens_footer {
         padding: 25px 0px;
     }
 
-    .texto_logo_footer{
+    .texto_logo_footer {
         width: 100%;
         margin: 0;
         text-align: center;
     }
+
+    .container_autoral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+
+    .itens_autoral {
+        margin: 15px 0px;
+        padding: 0px 25px;
+    }
+
+   
+
 }
 
 
@@ -117,7 +137,7 @@
         font-size: 1rem;
     }
 
-    
+
 
     .container_hero {
         margin: 100px auto;
@@ -128,7 +148,7 @@
     }
 
     .titulo_hero {
-        
+
         font-size: 3rem;
     }
 
@@ -144,8 +164,8 @@
         font-size: 1rem;
     }
 
-    .icone_sobre{
-        width: 80px!important;
+    .icone_sobre {
+        width: 80px !important;
     }
 
     .container_servicos {
@@ -162,17 +182,17 @@
         font-size: 1.5em;
     }
 
-    .texto_servicos{
+    .texto_servicos {
         width: 90%;
         font-size: 1rem;
-        
+
     }
 
-    
-    .elegancia_fala{
+
+    .elegancia_fala {
         font-size: 1.5rem;
         font-weight: 300;
-    }   
+    }
 
     .titulo_sobre {
         font-size: 2.5rem;
@@ -182,51 +202,85 @@
         font-size: 1rem;
     }
 
-    
 
-    .prova_social{
+
+    .prova_social {
         font-size: 1.5rem;
         padding-top: 130px;
     }
 
-    .titulo_clientes{        
+    .titulo_clientes {
         margin-top: 0;
         padding-top: 0;
         padding-bottom: 50px;
         font-size: 2.5rem;
     }
 
-    
 
 
-    .container_footer{
+
+    .container_footer {
         display: flex;
         justify-content: space-between;
         padding: 50px 0px;
         text-align: left;
     }
 
-    .itens_footer{
-       padding-top: 125px;
-       
+    .itens_footer {
+        padding-top: 125px;
+
     }
 
-    .texto_logo_footer{
+    .texto_logo_footer {
         width: 70%;
         text-align: left;
         margin-top: 10px;
-    }    
+    }
+
+    .divisoria_footer {
+        width: 80%;
+        margin: auto;
+        height: 1px;
+        background-color: #f4f4f4;
+
+    }
+
+
+    .container_autoral {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: left!important;
+        margin-top: 20px;
+    }
+
+    .container_autoral {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+
+
+    .itens_autoral {
+        padding: 0;
+        margin: 15px 0px;
+    }
 
    
-    
+
+
+
+
+
+
 
 }
 
 
-@media(min-width:1200px){
-    
-    
-}
+
 
 /* mobile ------------------------------------------------*/
 
@@ -359,48 +413,54 @@
         max-width: 100% !important;
         padding: 30px 0 !important;
         margin: 0 auto !important;
-      }
-    
-      .carousel_container {
+    }
+
+    .carousel_container {
         width: 100% !important;
-      }
-    
-      .carousel_wrapper {
+    }
+
+    .carousel_wrapper {
         width: 100% !important;
         max-width: 100% !important;
         padding: 0 15px !important;
         box-sizing: border-box !important;
-        overflow: hidden !important; /* Esconde o que passa das bordas */
-      }
-    
-      /* 
+        overflow: hidden !important;
+        /* Esconde o que passa das bordas */
+    }
+
+    /* 
          AQUI ESTÁ O SEGREDO: 
          Transforma o contêiner em uma linha rolável com o dedo
       */
-      .container_depoimentos {
+    .container_depoimentos {
         width: 100% !important;
-        overflow-x: auto !important; /* Permite rolar para os lados no mobile */
-        scroll-snap-type: x mandatory !important; /* Força o bloco a travar na tela */
-        scroll-behavior: smooth !important; /* Deixa o deslize suave */
-        -webkit-overflow-scrolling: touch; /* Melhora a performance no iPhone (iOS) */
-      }
-    
-      /* Oculta a barra de rolagem horizontal padrão do sistema */
-      .container_depoimentos::-webkit-scrollbar {
+        overflow-x: auto !important;
+        /* Permite rolar para os lados no mobile */
+        scroll-snap-type: x mandatory !important;
+        /* Força o bloco a travar na tela */
+        scroll-behavior: smooth !important;
+        /* Deixa o deslize suave */
+        -webkit-overflow-scrolling: touch;
+        /* Melhora a performance no iPhone (iOS) */
+    }
+
+    /* Oculta a barra de rolagem horizontal padrão do sistema */
+    .container_depoimentos::-webkit-scrollbar {
         display: none !important;
-      }
-    
-      .box_depoimentos {
+    }
+
+    .box_depoimentos {
         width: 100% !important;
         min-width: 100% !important;
         max-width: 100% !important;
         flex-shrink: 0 !important;
         padding: 25px 20px !important;
         box-sizing: border-box !important;
-        scroll-snap-align: start !important; /* Alinha o bloco perfeitamente ao parar o dedo */
-      }
-    
-      .texto_depoimento p {
+        scroll-snap-align: start !important;
+        /* Alinha o bloco perfeitamente ao parar o dedo */
+    }
+
+    .texto_depoimento p {
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
@@ -408,41 +468,56 @@
         text-overflow: ellipsis;
         font-size: 1rem;
         line-height: 1.5;
-      }
-    
-      .texto_depoimento.expandido p {
+    }
+
+    .texto_depoimento.expandido p {
         display: block;
         overflow: visible;
-      }
-    
-      .btn_ler_mais {
+    }
+
+    .btn_ler_mais {
         display: inline-block;
-      }
-    
-      /* REMOVE COMPLETAMENTE AS SETAS NO MOBILE */
-      .carousel_controls {
+    }
+
+    /* REMOVE COMPLETAMENTE AS SETAS NO MOBILE */
+    .carousel_controls {
         display: none !important;
-      }
-      
+    }
 
 
 
-    #rodape{
+
+    #rodape {
         padding: 50px 0px;
     }
 
-    .container_footer{
+    .container_footer {
         text-align: center;
     }
 
-    .itens_footer{
+    .itens_footer {
         padding: 25px 0px;
     }
 
-    .texto_logo_footer{
+    .texto_logo_footer {
         width: 100%;
         margin: 0;
         text-align: center;
+    }
+
+    .container_autoral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+
+    .itens_autoral {
+        padding: 0px 25px;
+        margin: 15px 0px;
     }
 
 
