@@ -68,7 +68,7 @@ function toggleTexto(botao) {
 
 
 
-<<<<<<< HEAD
+
 function desktopSlide(){
   if(window.screen.width > 767){
      setInterval(() => {
@@ -82,7 +82,7 @@ function desktopSlide(){
   desktopSlide()
 
  
-=======
+
 
 function slidemuda(){
   
@@ -103,4 +103,4 @@ slidemuda();
 //    mudarSlide(1);
 // }, 5000);
 // }
->>>>>>> 93fdf08c0232a43740637c0e9f83c73e77457a84
+
