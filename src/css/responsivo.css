@@ -127,6 +127,8 @@
 
     #container_header {
         justify-content: space-between;
+        padding:  0px 35px;
+        
     }
 
     #logo_desktop {
@@ -247,7 +249,7 @@
 
 
     .container_autoral {
-        max-width: 1200px;
+        max-width: 950px;
         margin: 0 auto;
         text-align: left!important;
         margin-top: 20px;
@@ -269,15 +271,27 @@
         margin: 15px 0px;
     }
 
-   
-
-
-
-
-
-
+    .container_footer {
+        max-width: 950px;
+        margin: auto;
+    }
 
 }
+
+
+@media(min-width:1200px) {
+
+    #container_header {
+        padding:  0px ;
+        
+    }
+
+    .container_footer, .container_autoral {
+        max-width: 1200px;
+        padding: 0px 20px;
+    }    
+
+}    
 
 
 
