@@ -59,6 +59,14 @@
     line-height: 1.7;
     color: #333;
     margin-bottom: 20px;
+    font-weight: 200;
+  }
+
+  .nome_depoente{
+    font-size: 1.2rem;
+    font-weight: bold!important;
+    color: #111111;
+    margin-bottom: 5px;
   }
   
   .estrelinhas_depoimentos {
