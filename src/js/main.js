@@ -69,6 +69,21 @@ function toggleTexto(botao) {
 
 
 
+function desktopSlide(){
+  if(window.screen.width > 767){
+     setInterval(() => {
+   mudarSlide(1);
+ },5000);
+  }
+   
+  
+  }
+
+  desktopSlide()
+
+ 
+
+
 function slidemuda(){
   
   if(window.innerWidth > 767) {
@@ -88,3 +103,4 @@ slidemuda();
 //    mudarSlide(1);
 // }, 5000);
 // }
+
