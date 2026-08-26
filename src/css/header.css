@@ -12,19 +12,13 @@ header {
     height: 80px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-
+    
 }
 
 #logo_desktop {
     width: 120px;
-}
-
-
-
-#whatsapp_icon{
-width: 30px;
 }
 
 
@@ -56,22 +50,28 @@ width: 30px;
     padding: 10px;
 }
 
-#btn_agendar_topo {
-    background-color: var(--nova-cor-terciaria);
-    color: var(--nova-cor-fundo-1);
-    padding: 10px 30px;   
-    border-radius: 5px;
+
+
+#icone-whatsapp-topo{
+width: 30px;
+}
+
+
+.btn_topo{
+    width: 150px;
+    background:linear-gradient(#8e3030, #de9399);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-
+    justify-content: center;
+    color: var(--cor-secundaria);
+    padding: 5px;
+    border-radius: 2px;
 
 }
 
-#btn_agendar_topo:hover {
-    background-color: var(--cor-alternativa-2);
-    box-shadow: 0px 0px 5px var(--cor-secundaria);
-    color: var(--nova-cor-fundo-1);
+
+.btn_topo:hover{
+    background: #8e3030;
+    transform: translateY(-2px);
     
 }
