@@ -1,6 +1,5 @@
 
-const secoes = ["header", "hero", "servicos", "sobre", "depoimentos", "rodape"]
-
+const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "rodape"]
 
 
 
@@ -103,4 +102,45 @@ slidemuda();
 //    mudarSlide(1);
 // }, 5000);
 // }
+
+// Escuta absolutamente qualquer clique na janela da página
+window.addEventListener('click', (event) => {
+  
+  // 1. Verifica se o elemento clicado é uma imagem da galeria
+  if (event.target.classList.contains('galeria-img')) {
+    const imagemClicada = event.target;
+    
+    // Busca o modal e seus componentes dinamicamente no momento do clique
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("img01");
+    const captionText = document.getElementById("caption");
+
+    if (modal && modalImg) {
+      modal.style.display = "block";
+      modalImg.src = imagemClicada.src;
+      captionText.innerHTML = imagemClicada.alt || "";
+      console.log("Modal aberto com sucesso para a imagem:", imagemClicada.src);
+    } else {
+      console.error("O HTML do modal não foi encontrado na página neste momento.");
+    }
+  }
+
+  // 2. Verifica se o elemento clicado é o botão de fechar (X)
+  if (event.target.classList.contains('close')) {
+    const modal = document.getElementById("myModal");
+    if (modal) {
+      modal.style.display = "none";
+      console.log("Modal fechado pelo botão X");
+    }
+  }
+
+  // 3. Verifica se o usuário clicou no fundo escuro do modal para fechar
+  const modal = document.getElementById("myModal");
+  if (modal && event.target === modal) {
+    modal.style.display = "none";
+    console.log("Modal fechado pelo fundo escuro");
+  }
+});
+
+
 

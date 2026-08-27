@@ -1,0 +1,105 @@
+.container_galeria{
+    background-color: antiquewhite;
+    padding: 45px 0px;
+}
+
+.chamada_galeria{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.box_imagens_galeria{
+    max-width: 1200px;
+    margin: auto;
+    background-color: ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+
+}
+
+.galeria-img{
+    width: 30%;
+    cursor: pointer;
+}
+/* O Modal (fundo escuro corrigido) */
+.modal {
+  display: none; /* Controlado pelo JS */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Força 100% da largura da tela */
+  height: 100vh; /* Força 100% da altura da tela */
+  background-color: rgba(0, 0, 0, 0.85); /* Fundo preto transparente */
+  z-index: 99999; /* Garante que fica na frente de tudo */
+  
+  /* Centraliza a imagem e a legenda perfeitamente */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Alinhamento quando o JS ativa o modal */
+.modal[style*="display: block"] {
+  display: flex !important; /* Força o uso de Flexbox ao abrir */
+}
+
+/* Imagem dentro do modal */
+.modal-content {
+  max-width: 90%;
+  max-height: 75vh;
+  object-fit: contain; /* Não deixa a imagem distorcer */
+  border-radius: 4px;
+}
+
+/* Legenda abaixo da imagem */
+#caption {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Botão de Fechar (X) */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+}
+
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
