@@ -246,6 +246,11 @@
         font-size: 1rem;
     }
 
+    .texto_galeria{
+        width: 75%;
+        margin: auto;
+    }
+
 
 
 
@@ -303,6 +308,7 @@
         max-width: 950px;
         margin: auto;
     }
+
 
 }
 
@@ -577,6 +583,19 @@
         padding: 0px 25px;
         margin: 15px 0px;
     }
+
+    .container_galeria{
+        padding: 100px 0px;
+    }    
+
+    .chamada_galeria{
+        padding: 15px;
+     }
+
+     .galeria-img{
+        width: 33%;
+        height: 200px;
+     }
 
     
 

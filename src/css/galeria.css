@@ -1,27 +1,40 @@
 .container_galeria{
-    background-color: antiquewhite;
-    padding: 45px 0px;
+    background-color: #fcfaf8;
+    padding: 145px 0px;
 }
 
 .chamada_galeria{
-    text-align: center;
-    margin-bottom: 25px;
+   max-width: 1200px;
+   margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo_galeria{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--cor-destaque);
+    margin-bottom: 15px;
+}
+
+.texto_galeria{
+  font-weight: 200;
 }
 
 .box_imagens_galeria{
     max-width: 1200px;
     margin: auto;
-    background-color: ;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
-    gap: 15px;
+    gap: 1px;
 
 }
 
 .galeria-img{
-    width: 30%;
+    width: 33%;
+    height: 300px;
+    object-fit: cover;
     cursor: pointer;
 }
 /* O Modal (fundo escuro corrigido) */
