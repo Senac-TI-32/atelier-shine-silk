@@ -373,7 +373,6 @@
 
     .conteudo_hero {
         flex-direction: column;
-
     }
 
     .conteudo_hero img {
@@ -383,9 +382,20 @@
         box-shadow: none;
     }
 
+    .numeros_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
 
     .numeros_hero {
-        padding: 5px 15px;
+        width: 75%;
+        padding: 5px 0px;
+        display: block;
+        margin: auto;
+        
     }
 
     .descricao_numeros_hero {
@@ -415,6 +425,14 @@
         flex-direction: column;
         align-items: center;
         gap: 0;
+    }
+
+    .elipse_servicos{
+        margin: 10px 0px;
+    }
+
+    .texto_servicos{
+        margin: 10px 0px;
     }
 
     #sobre {
