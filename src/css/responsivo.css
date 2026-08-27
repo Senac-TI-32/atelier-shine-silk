@@ -71,6 +71,12 @@
         padding: 0px 20px;
     }
 
+    
+    .chamada_galeria{
+        padding: 0px 20px;
+    }   
+
+
 
     .titulo_clientes,
     .prova_social {
@@ -228,6 +234,10 @@
         font-size: 1rem;
     }
 
+.titulo_galeria{
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
 
 
     .prova_social {

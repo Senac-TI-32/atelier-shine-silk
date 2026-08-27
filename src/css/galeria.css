@@ -1,6 +1,7 @@
 .container_galeria{
     background-color: #fcfaf8;
     padding: 145px 0px;
+    
 }
 
 .chamada_galeria{
@@ -13,30 +14,41 @@
 .titulo_galeria{
     font-size: 30px;
     font-weight: 600;
-    color: var(--cor-destaque);
+    
     margin-bottom: 15px;
 }
 
 .texto_galeria{
   font-weight: 200;
+  color: var(--cor-destaque);
 }
 
-.box_imagens_galeria{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1px;
-
+.box_imagens_galeria {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1px;
+  overflow: hidden;
 }
 
-.galeria-img{
-    width: 33%;
-    height: 300px;
-    object-fit: cover;
-    cursor: pointer;
+.galeria-img {
+  max-width: 33%;
+  height: 300px;
+  flex: 1 1 300px; /* cada imagem ocupa até 300px e se ajusta */
+  object-fit: cover; /* corta o excesso sem distorcer */
+  transition: filter 0.3s ease;
+  cursor: pointer;
 }
+
+
+  
+.galeria-img:hover {
+  filter: brightness(70%);
+}
+
+
 /* O Modal (fundo escuro corrigido) */
 .modal {
   display: none; /* Controlado pelo JS */
