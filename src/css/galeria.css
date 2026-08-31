@@ -83,8 +83,14 @@
 #caption {
   color: #fff;
   font-size: 18px;
-  margin-top: 15px;
+  transform: translateY(-100px);
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.351);
+  backdrop-filter:blur(10px);
+  width: 300px;
+  height: auto;
+  padding: 10px;
+
 }
 
 /* Botão de Fechar (X) */

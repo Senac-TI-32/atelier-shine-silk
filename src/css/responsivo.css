@@ -291,19 +291,16 @@
     }
 
 
+
     .container_autoral {
         max-width: 950px;
         margin: 0 auto;
         text-align: left!important;
-        margin-top: 20px;
-    }
-
-    .container_autoral {
         display: flex;
         flex-direction: row;
         align-items: center;
         text-align: left;
-        margin-top: 20px;
+        margin-top: 65px;
         padding: 0;
     }
 
@@ -311,7 +308,7 @@
 
     .itens_autoral {
         padding: 0;
-        margin: 15px 0px;
+       
     }
 
     .container_footer {
@@ -590,8 +587,9 @@
 
 
     .itens_autoral {
-        padding: 0px 25px;
+        padding: 25px;
         margin: 15px 0px;
+        
     }
 
     .container_galeria{
