@@ -43,7 +43,7 @@ function mudarSlide(direcao) {//Cria a função responsável por mudar o slide. 
   }
   
   const track = document.getElementById('trackDepoimentos');//Seleciona o elemento que contém todos os slides.
-  track.style.transform = `translateX(-${indiceAtual * 50}%)`;//Move a faixa de slides horizontalmente. Multiplica o índice pelo tamanho do deslocamento (nesse caso, 50% por slide)
+  track.style.transform = `translateX(-${indiceAtual * 40}%)`;//Move a faixa de slides horizontalmente. Multiplica o índice pelo tamanho do deslocamento (nesse caso, 50% por slide)
 }
 
 
@@ -66,33 +66,19 @@ function toggleTexto(botao) {
 }
 
 
-
-
-function desktopSlide(){
-  if(window.screen.width > 767){
-     setInterval(() => {
-   mudarSlide(1);
- },5000);
-  }
-   
-  
-  }
-
-  desktopSlide()
-
  
-
 
 function slidemuda(){
   
-  if(window.innerWidth > 767) {
+ //if(window.innerWidth > 767) {
     setInterval(() => {
       mudarSlide(1);
-    }, 5000);
-  }
+    }, 1000);
+  //}
 }
 
 slidemuda();
+
 
 
 //erro
@@ -159,6 +145,8 @@ window.addEventListener('click', (event) => {
     modal.style.display = "none";
     //console.log("Modal fechado pelo fundo escuro");
   }
+
+ //console.log(event)
 
   
 });
