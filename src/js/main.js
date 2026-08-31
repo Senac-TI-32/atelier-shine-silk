@@ -116,7 +116,10 @@ const lista =[
   "Vestido curto tomara que caia azul-biciclo brilhante com babado em renda na barra."
 ]
 
+
 window.addEventListener('click', (event) => {
+
+
   
   // 1. Verifica se o elemento clicado é uma imagem da galeria
   if (event.target.classList.contains('galeria-img')) {
@@ -133,6 +136,8 @@ window.addEventListener('click', (event) => {
       modal.style.display = "block";
       modalImg.src = imagemClicada.src;
       captionText.innerHTML = imagemClicada.alt || lista[imagemClicada.dataset.id]
+        
+     
       //console.log("Modal aberto com sucesso para a imagem:", imagemClicada.dataset.id);
     } else {
       //console.error("O HTML do modal não foi encontrado na página neste momento.");
@@ -154,6 +159,8 @@ window.addEventListener('click', (event) => {
     modal.style.display = "none";
     //console.log("Modal fechado pelo fundo escuro");
   }
+
+  
 });
 
 

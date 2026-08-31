@@ -81,7 +81,8 @@
 
 /* Legenda abaixo da imagem */
 #caption {
-  color: #fff;
+  font-family: sans-serif;
+  color: #ccc;
   font-size: 18px;
   transform: translateY(-100px);
   text-align: center;
