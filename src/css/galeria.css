@@ -69,6 +69,7 @@
 /* Alinhamento quando o JS ativa o modal */
 .modal[style*="display: block"] {
   display: flex !important; /* Força o uso de Flexbox ao abrir */
+  
 }
 
 /* Imagem dentro do modal */
@@ -79,18 +80,21 @@
   border-radius: 4px;
 }
 
+
 /* Legenda abaixo da imagem */
 #caption {
+  position: absolute;
   font-family: sans-serif;
   color: #ccc;
   font-size: 18px;
-  transform: translateY(-100px);
+  bottom: 0;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.351);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter:blur(10px);
   width: 300px;
   height: auto;
   padding: 10px;
+  transform: translateY(-150px);
 
 }
 

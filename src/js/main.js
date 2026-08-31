@@ -99,7 +99,10 @@ const lista =[
   "Macaquinho estruturado azul-biciclo com decote regata, recortes laterais em tela e caimento alfaiataria justo.",
   "Vestido de noiva clássico off-white com decote V, corpo em renda bordada e saia fluida.",
   "Vestido longo de festa verde-oliva de um ombro só com saia fluida em camadas de tule.",
-  "Vestido curto tomara que caia azul-biciclo brilhante com babado em renda na barra."
+  "Vestido curto tomara que caia azul-biciclo brilhante com babado em renda na barra.",
+  " Pijama de frio felpudo com estampa xadrez nas cores vermelha e preta.",
+  "Vestido curto de corte reto confeccionado em tecido estruturado, destacando-se pela estamparia maxi abstrata com inspiração orgânica",
+  "Corset tomara-que-caia vermelho vibrante com textura totalmente plissada em linhas diagonais."
 ]
 
 
