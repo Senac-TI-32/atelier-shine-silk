@@ -70,11 +70,11 @@ function toggleTexto(botao) {
 
 function slidemuda(){
   
- //if(window.innerWidth > 767) {
+ if(window.innerWidth > 767) {
     setInterval(() => {
       mudarSlide(1);
-    }, 1000);
-  //}
+    }, 9000);
+ }
 }
 
 slidemuda();
