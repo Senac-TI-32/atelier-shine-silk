@@ -119,9 +119,9 @@ window.addEventListener('click', (event) => {
       modal.style.display = "block";
       modalImg.src = imagemClicada.src;
       captionText.innerHTML = imagemClicada.alt || "";
-      console.log("Modal aberto com sucesso para a imagem:", imagemClicada.src);
+      //console.log("Modal aberto com sucesso para a imagem:", imagemClicada.src);
     } else {
-      console.error("O HTML do modal não foi encontrado na página neste momento.");
+      //console.error("O HTML do modal não foi encontrado na página neste momento.");
     }
   }
 
@@ -130,7 +130,7 @@ window.addEventListener('click', (event) => {
     const modal = document.getElementById("myModal");
     if (modal) {
       modal.style.display = "none";
-      console.log("Modal fechado pelo botão X");
+      //console.log("Modal fechado pelo botão X");
     }
   }
 
@@ -138,7 +138,7 @@ window.addEventListener('click', (event) => {
   const modal = document.getElementById("myModal");
   if (modal && event.target === modal) {
     modal.style.display = "none";
-    console.log("Modal fechado pelo fundo escuro");
+    //console.log("Modal fechado pelo fundo escuro");
   }
 });
 
