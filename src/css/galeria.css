@@ -40,6 +40,7 @@
   gap: 15px; 
   /* Preenche os espaços vazios automaticamente se uma imagem grande pular de linha */
   grid-auto-flow: dense; 
+  
 }
 
 /* Configuração padrão para todas as imagens */
