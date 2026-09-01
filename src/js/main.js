@@ -102,7 +102,8 @@ const lista =[
   "Vestido curto tomara que caia azul-biciclo brilhante com babado em renda na barra.",
   " Pijama de frio felpudo com estampa xadrez nas cores vermelha e preta.",
   "Vestido curto de corte reto confeccionado em tecido estruturado, destacando-se pela estamparia maxi abstrata com inspiração orgânica",
-  "Corset tomara-que-caia vermelho vibrante com textura totalmente plissada em linhas diagonais."
+  "Corset tomara-que-caia vermelho vibrante com textura totalmente plissada em linhas diagonais.",
+  "Vestido fantasia, marrom de cangaceira com chapéu de couro, lenço vermelho e bandoleira de balas."
 ]
 
 

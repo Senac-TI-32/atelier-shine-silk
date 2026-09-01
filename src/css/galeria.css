@@ -37,7 +37,7 @@
   /* Cria 4 colunas de tamanhos iguais */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   /* Define o espaçamento entre as imagens */
-  gap: 15px; 
+  gap: 8px; 
   /* Preenche os espaços vazios automaticamente se uma imagem grande pular de linha */
   grid-auto-flow: dense; 
   
