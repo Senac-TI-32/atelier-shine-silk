@@ -48,6 +48,7 @@
     font-family: "Inria Serif", serif;
     font-style: italic;
     
+    
 }
 
 .elipse_servicos img{
@@ -58,7 +59,7 @@
 }
 
 .titulo_box_servicos {
-    margin: 10px 0px;
+    margin-top: 10px;
 }
 
 
@@ -70,9 +71,10 @@
 }
 
 .texto_servicos {
-    margin-bottom: 0px;
     font-weight: 200;
     width: 90%;
+    padding: 5px 20px;
+    margin-bottom: 15px;
 }
 
 
@@ -83,6 +85,10 @@
     width: 90%;
     line-height: 1.5;
     gap: 10px;
+    border: 2px solid #f3e5dc;
+    border-radius: 2px;
+    margin: 15px auto;
+
 }
 
 

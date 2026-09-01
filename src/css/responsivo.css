@@ -221,10 +221,10 @@
     }
 
     
-.elipse_servicos img{
-    height: 400px;
+    .elipse_servicos img{
+        height: 400px;
     
-}
+    }
 
 
     .elegancia_fala {
@@ -447,11 +447,12 @@
         flex-direction: column;
         align-items: center;
         gap: 0;
+        background-color: transparent;
     }
 
     .elipse_servicos{
         width: 100%;
-        margin: 10px 0px;
+        margin: 0px;
     }
 
     .texto_servicos{
@@ -561,42 +562,7 @@
         display: none !important;
     }
 
-
-
-
-    #rodape {
-        padding: 50px 0px;
-    }
-
-    .container_footer {
-        text-align: center;
-    }
-
-    .itens_footer {
-        padding: 25px 0px;
-    }
-
-    .texto_logo_footer {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
-    .container_autoral {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-
-
-    .itens_autoral {
-        padding: 25px;
-        margin: 15px 0px;
-        
-    }
+    
 
     .container_galeria{
         padding: 20px 0px;
@@ -636,6 +602,41 @@
        .img_cangaceira{
         display: none;
        }
+
+
+       #rodape {
+        padding: 50px 0px;
+    }
+
+    .container_footer {
+        text-align: center;
+    }
+
+    .itens_footer {
+        padding: 25px 0px;
+    }
+
+    .texto_logo_footer {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .container_autoral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+
+    .itens_autoral {
+        padding: 25px;
+        margin: 15px 0px;
+        
+    }
     
 
 
