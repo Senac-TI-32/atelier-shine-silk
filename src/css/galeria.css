@@ -1,8 +1,8 @@
-.container_galeria{
-    background-color: #fcfaf8;
-    padding: 145px 0px;
-    
+#galeria{
+  background-color: #fcfaf8;
+  padding: 145px 0px;
 }
+
 
 .chamada_galeria{
    max-width: 1200px;
@@ -23,23 +23,52 @@
   color: var(--cor-destaque);
 }
 
-.box_imagens_galeria {
+/* Container principal (opcional, para controle de largura) */
+.container_galeria {
+  width: 100%;
   max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1px;
-  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* O container do grid (div que envolve diretamente as imagens) */
+.box_imagens_galeria {
+  display: grid;
+  /* Cria 4 colunas de tamanhos iguais */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  /* Define o espaçamento entre as imagens */
+  gap: 15px; 
+  /* Preenche os espaços vazios automaticamente se uma imagem grande pular de linha */
+  grid-auto-flow: dense; 
+}
+
+/* Configuração padrão para todas as imagens */
 .galeria-img {
-  max-width: 33%;
-  height: 300px;
-  flex: 1 1 300px; /* cada imagem ocupa até 300px e se ajusta */
-  object-fit: cover; /* corta o excesso sem distorcer */
-  transition: filter 0.3s ease;
+  width: 100%;
+  height: 250px; /* Altura padrão para as imagens menores */
+  object-fit: cover; /* Mantém a proporção da foto sem distorcer */
+  border-radius: 8px; /* Opcional: borda arredondada */
   cursor: pointer;
+}
+
+/* Classes para destacar imagens específicas */
+
+/* Faz a imagem ocupar 2 colunas de largura */
+.img-larga {
+  grid-column: span 2;
+}
+
+/* Faz a imagem ocupar 2 linhas de altura */
+.img-alta {
+  grid-row: span 2;
+  height: 100%; /* Garante que ela estique para preencher as duas linhas */
+}
+
+/* Faz a imagem ocupar um bloco grande (2 colunas e 2 linhas) */
+.img-grande {
+  grid-column: span 1;
+  grid-row: span 3;
+  height: 100%;
 }
 
 
