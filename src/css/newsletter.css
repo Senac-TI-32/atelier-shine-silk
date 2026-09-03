@@ -26,14 +26,7 @@
     margin: 10px 0px;
 }
 
-textarea{
-    padding: 10px;
-    margin-top: 15px;
-    font-family: sans-serif;
-    border: none;
-     outline: none; 
-    
-}
+
 
 #formulario > input:hover{
     outline: 2px solid var(--cor-destaque); 
@@ -47,3 +40,10 @@ textarea{
 textarea:hover{
   outline: 2px solid var(--cor-destaque); 
 }
+
+
+
+    .btn-formulario:hover{
+    background: #d2b459;
+    transition: all .5s;
+    }

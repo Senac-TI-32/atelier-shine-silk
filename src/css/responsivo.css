@@ -119,8 +119,18 @@
         padding: 25px;
     }
 
+    
+
     #formulario > input{
         padding: 15px;
+    }
+
+    textarea{
+    padding:  15px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    border: none;
+    outline: none; 
     }
 
     .btn-formulario{
@@ -134,10 +144,9 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 800;
-}
+    }
 
-
-
+    
 
     #rodape {
         padding: 50px 0px;
@@ -189,6 +198,10 @@
         
     }
 
+    .itens_header{
+        margin: 0px 20px;
+    }
+
     #logo_desktop {
         width: 200px;
     }
@@ -197,12 +210,11 @@
         font-size: 1rem;
     }
 
-     .btn_topo{
-      width: 160px;
-      padding:8px;
-      word-spacing: 45px;
-      
-      }
+    .btn_topo{
+     width: 160px;
+     padding:8px;
+     word-spacing: 45px;
+     }
 
 
 
@@ -328,6 +340,12 @@
         padding: 25px;
     }   
 
+     textarea{
+        padding:  25px;
+     }
+
+    
+
      .btn-formulario{
         padding: 15px;
     }
@@ -356,7 +374,7 @@
         width: 80%;
         margin: auto;
         height: 1px;
-        background-color: #f4f4f4;
+        background-color: #8d6363;
 
     }
 
@@ -391,6 +409,10 @@
 
 
 @media(min-width:1200px) {
+
+    .itens_header{
+        margin: 0px 15px;
+    }
 
   
     .container_footer, .container_autoral {
@@ -692,6 +714,14 @@
        #formulario > input{
         padding: 18px;
        } 
+
+    textarea{
+    padding:  15px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    border: none;
+    outline: none; 
+    }   
 
    .btn-formulario{
     margin: 25px 0px;

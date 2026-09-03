@@ -58,7 +58,7 @@ width: 30px;
 
 
 .btn_topo{    
-    background:linear-gradient(to right,#C2A312,#655404);
+    background-color: #954c4c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,10 @@ width: 30px;
 
 
 .btn_topo:hover{
-    background: #C2A312;
-    transform: translateY(-1px);
+    background: transparent;
+    color: #333;
+    border: 1px solid var(--nova-cor-terciaria);
+    
+    transition: all .5s;
     
 }

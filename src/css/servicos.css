@@ -91,6 +91,11 @@
 
 }
 
+.itens_servicos:hover{
+    border: 2px solid #906464;
+    transition: all .5s;
+}
+
 
 .btn_processo {
     width: 240px;
