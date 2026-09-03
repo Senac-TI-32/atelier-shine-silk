@@ -70,13 +70,13 @@
     }
 
     
-
-    
-
-    
     .chamada_galeria{
         padding: 0px 20px;
     }   
+
+    .img_cangaceira{
+        display: none;
+       }
 
 
 
@@ -97,6 +97,45 @@
     .prova_social {
         padding-top: 50px;
     }
+
+    .container-newsletter{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .itens-newsletter{
+        width: 48%;
+        padding: 0;
+    }
+
+    .titulo-formulario{
+        font-size: 2rem;
+    }
+
+     #formulario{
+        padding: 25px;
+    }
+
+    #formulario > input{
+        padding: 15px;
+    }
+
+    .btn-formulario{
+    margin: 25px 0px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background:linear-gradient(to left,#C2A312,#d6b833);
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
 
 
 
@@ -247,6 +286,8 @@
 
     
 
+    
+
 
     .prova_social {
         font-size: 1.5rem;
@@ -267,10 +308,29 @@
     .texto_galeria{
         width: 75%;
         margin: auto;
+    }    
+
+
+    .itens-newsletter{
+        width: 50%;
+        padding: 0;
     }
 
+    .titulo-formulario{
+        font-size: 2.5rem;
+    }
 
+    #formulario{
+        padding: 40px;
+       }
 
+    #formulario > input{
+        padding: 25px;
+    }   
+
+     .btn-formulario{
+        padding: 15px;
+    }
 
     .container_footer {
         display: flex;
@@ -278,6 +338,8 @@
         padding: 50px 0px;
         text-align: left;
     }
+
+     
 
     .itens_footer {
         padding-top: 125px;
@@ -334,7 +396,19 @@
     .container_footer, .container_autoral {
         max-width: 1200px;
         padding: 0px 20px;
-    }    
+    }  
+
+    .img_cangaceira{
+        display: block;
+    }
+
+    #formulario{
+        padding: 50px;
+    }
+
+   
+    
+    
 
 }    
 
@@ -602,6 +676,35 @@
        .img_cangaceira{
         display: none;
        }
+
+       .itens-newsletter:nth-child(1){
+        text-align: center;
+       }
+
+       .texto-pagamento{
+        font-size: .8rem;
+       }
+
+       #formulario{
+        padding: 25px;
+       }
+
+       #formulario > input{
+        padding: 18px;
+       } 
+
+   .btn-formulario{
+    margin: 25px 0px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background:linear-gradient(to left,#C2A312,#d6b833);
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+}
 
 
        #rodape {

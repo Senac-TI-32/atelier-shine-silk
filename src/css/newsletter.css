@@ -1,0 +1,49 @@
+
+#newsletter{
+    background-color: #fcfaf8;
+}
+
+.container-newsletter{
+    padding: 100px 0px;
+}
+
+.itens-newsletter{
+    padding: 15px;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background: linear-gradient(to left, #f4e3d1, #fcf5ed 50%);
+    border-radius: 5px;
+    
+}
+
+#formulario > input{
+    border: none;
+    border-radius: 2px;
+    margin: 10px 0px;
+}
+
+textarea{
+    padding: 10px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    border: none;
+     outline: none; 
+    
+}
+
+#formulario > input:hover{
+    outline: 2px solid var(--cor-destaque); 
+}
+
+ input:focus{
+  outline: none;
+  
+}
+
+textarea:hover{
+  outline: 2px solid var(--cor-destaque); 
+}

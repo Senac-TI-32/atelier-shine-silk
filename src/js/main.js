@@ -1,5 +1,5 @@
 
-const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "rodape"]
+const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter" , "rodape"]
 
 
 
