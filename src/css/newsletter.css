@@ -29,7 +29,7 @@
 
 
 #formulario > input:hover{
-    outline: 2px solid var(--cor-destaque); 
+    outline: 1px solid var(--cor-destaque); 
 }
 
  input:focus{
@@ -38,12 +38,13 @@
 }
 
 textarea:hover{
-  outline: 2px solid var(--cor-destaque); 
+  outline: 1px solid var(--cor-destaque); 
 }
 
 
 
-    .btn-formulario:hover{
+.btn-formulario:hover{
     background: #d2b459;
-    transition: all .5s;
-    }
+    
+    
+}

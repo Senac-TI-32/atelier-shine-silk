@@ -1,5 +1,5 @@
 
-const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter" , "rodape"]
+const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter", "rodape"]
 
 
 
@@ -10,6 +10,8 @@ async function carregarSecoes(nome) {
     
 }
 
+
+
 async function montarPagina() {
     for(const nome of secoes){
         try{
@@ -18,10 +20,32 @@ async function montarPagina() {
             console.error(e.message)
         }
     }
+
+    
+document.getElementById('formulario').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+
+  if (!email || !phone) {
+      alert('Por favor, preencha todos os campos obrigatórios.');
+      return;
+  }
+
+  // Aqui você pode adicionar a lógica para enviar os dados do formulário para o servidor ou processá-los conforme necessário.
+
+  alert('Formulário enviado com sucesso!');
+  this.reset(); // Limpa o formulário após o envio
+});
     
 }
 
+
+
 montarPagina()
+
+
 
 
 // Função para mudar o slide dos depoimentos
@@ -89,7 +113,7 @@ slidemuda();
 // }, 5000);
 // }
 
-// Escuta absolutamente qualquer clique na janela da página
+
 const lista =[
   "Vestido de festa longo sereia em renda rosa chá com gola alta bordada e transparência.",
   "Conjunto moderno off-white em malha canelada com cropped de alças e saia longa com fenda.",
@@ -106,7 +130,7 @@ const lista =[
   "Vestido fantasia, marrom de cangaceira com chapéu de couro, lenço vermelho e bandoleira de balas."
 ]
 
-
+// Escuta absolutamente qualquer clique na janela da página
 window.addEventListener('click', (event) => {
 
 
@@ -154,6 +178,9 @@ window.addEventListener('click', (event) => {
 
   
 });
+
+
+
 
 
 
