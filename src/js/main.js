@@ -1,49 +1,71 @@
-
-const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter", "rodape"]
-
-
-
+const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter", "rodape"];
 
 async function carregarSecoes(nome) {
-    const secaoHTML = await fetch(`src/partials/${nome}.html`)
-    document.getElementById(nome).innerHTML = await secaoHTML.text()
-    
+  // Adicionada a barra '/' no início para funcionar em qualquer servidor
+  const secaoHTML = await fetch(`/src/partials/${nome}.html`);
+  document.getElementById(nome).innerHTML = await secaoHTML.text();
 }
-
-
 
 async function montarPagina() {
-    for(const nome of secoes){
-        try{
-            await carregarSecoes(nome)
-        }catch(e){
-            console.error(e.message)
-        }
+  for (const nome of secoes) {
+    try {
+      await carregarSecoes(nome);
+    } catch (e) {
+      console.error(e.message);
     }
-
-    
-document.getElementById('formulario').addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-
-  if (!email || !phone) {
-      alert('Por favor, preencha todos os campos obrigatórios.');
-      return;
   }
 
-  // Aqui você pode adicionar a lógica para enviar os dados do formulário para o servidor ou processá-los conforme necessário.
+  // O listener do formulário só é criado DEPOIS que todas as seções (incluindo a newsletter) carregaram
+  document.getElementById('formulario').addEventListener('submit', async function (e) {
+    e.preventDefault();
 
-  alert('Formulário enviado com sucesso!');
-  this.reset(); // Limpa o formulário após o envio
-});
-    
+
+    // 1. Captura os novos campos do HTML
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    // Validação (opcional: veja se quer tornar obrigatório)
+    if (!email || !phone || !nome || !mensagem) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
+
+    // 2. Coloca tudo dentro do pacote que vai para o PHP
+    const dados = {
+        nome: nome,
+        email: email,
+        phone: phone,
+        mensagem: mensagem
+    };
+
+
+
+    try {
+      // Enviando os dados para o seu arquivo PHP na raiz do projeto
+      const resultado = await fetch('backend/public/index.php', {
+        method: 'POST', // ou 'GET' dependendo de como você quer enviar os dados
+        body: JSON.stringify(dados)
+      });
+
+      const confirmacao = await resultado.json();
+
+      if (confirmacao.status) {
+        alert('Sucesso: ' + confirmacao.mensagem);
+        this.reset(); // Limpa o formulário apenas se der certo
+      } else {
+        alert('Erro no servidor: ' + confirmacao.mensagem);
+      }
+    } catch (erro) {
+      console.error("Erro na requisição:", erro);
+      alert('Não foi possível conectar ao servidor PHP.');
+    }
+  });
 }
 
+montarPagina();
 
-
-montarPagina()
 
 
 
@@ -57,15 +79,15 @@ function mudarSlide(direcao) {//Cria a função responsável por mudar o slide. 
 
 
   const totalSlides = slides.length; //Conta quantos slides existem no total
-  
+
   indiceAtual += direcao; //Atualiza o índice atual somando a direção. Se direcao = 1, vai para o próximo slide. Se direcao = -1, volta para o anterior.
-  
-  if (indiceAtual >= totalSlides) { 
+
+  if (indiceAtual >= totalSlides) {
     indiceAtual = 0; ////Se passar do último slide, volta para o primeiro.
-  } else if (indiceAtual < 0) { 
+  } else if (indiceAtual < 0) {
     indiceAtual = totalSlides - 1;//Se tentar ir antes do primeiro, volta para o último.
   }
-  
+
   const track = document.getElementById('trackDepoimentos');//Seleciona o elemento que contém todos os slides.
   track.style.transform = `translateX(-${indiceAtual * 40}%)`;//Move a faixa de slides horizontalmente. Multiplica o índice pelo tamanho do deslocamento (nesse caso, 50% por slide)
 }
@@ -79,7 +101,7 @@ function mudarSlide(direcao) {//Cria a função responsável por mudar o slide. 
 function toggleTexto(botao) {
   const box = botao.closest('.box_depoimentos');
   const textoContainer = box.querySelector('.texto_depoimento');
-  
+
   if (textoContainer.classList.contains('expandido')) {
     textoContainer.classList.remove('expandido');
     botao.textContent = 'Ler mais...';
@@ -90,15 +112,15 @@ function toggleTexto(botao) {
 }
 
 
- 
 
-function slidemuda(){
-  
- if(window.innerWidth > 767) {
+
+function slidemuda() {
+
+  if (window.innerWidth > 767) {
     setInterval(() => {
       mudarSlide(1);
     }, 9000);
- }
+  }
 }
 
 slidemuda();
@@ -114,7 +136,7 @@ slidemuda();
 // }
 
 
-const lista =[
+const lista = [
   "Vestido de festa longo sereia em renda rosa chá com gola alta bordada e transparência.",
   "Conjunto moderno off-white em malha canelada com cropped de alças e saia longa com fenda.",
   "Conjunto minimalista rosa claro em malha canelada com top tomara que caia e saia longa com fenda lateral.",
@@ -134,12 +156,12 @@ const lista =[
 window.addEventListener('click', (event) => {
 
 
-  
+
   // 1. Verifica se o elemento clicado é uma imagem da galeria
   if (event.target.classList.contains('galeria-img')) {
     const imagemClicada = event.target;
-    
-    
+
+
     // Busca o modal e seus componentes dinamicamente no momento do clique
     const modal = document.getElementById("myModal");
     const modalImg = document.getElementById("img01");
@@ -150,8 +172,8 @@ window.addEventListener('click', (event) => {
       modal.style.display = "block";
       modalImg.src = imagemClicada.src;
       captionText.innerHTML = imagemClicada.alt || lista[imagemClicada.dataset.id]
-        
-     
+
+
       //console.log("Modal aberto com sucesso para a imagem:", imagemClicada.dataset.id);
     } else {
       //console.error("O HTML do modal não foi encontrado na página neste momento.");
@@ -174,9 +196,9 @@ window.addEventListener('click', (event) => {
     //console.log("Modal fechado pelo fundo escuro");
   }
 
- //console.log(event)
+  //console.log(event)
 
-  
+
 });
 
 
