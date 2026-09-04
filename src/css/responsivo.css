@@ -43,6 +43,10 @@
         font-size: .7rem;
     }
 
+    .texto_servicos {
+        font-size: .8rem;
+    }   
+
     
 
     .btn_processo {
@@ -59,7 +63,8 @@
     }
 
     .texto_sobre {
-        font-size: .8rem;        
+        font-size: .8rem;    
+        margin: 10px 0px;    
     }
 
    
@@ -289,6 +294,7 @@
 
     .texto_sobre {
         font-size: 1rem;
+        margin: 25px 0px;
     }
 
     .titulo_galeria{

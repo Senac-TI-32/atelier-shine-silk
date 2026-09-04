@@ -59,7 +59,7 @@
 }
 
 .titulo_box_servicos {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 
@@ -73,8 +73,9 @@
 .texto_servicos {
     font-weight: 200;
     width: 90%;
-    padding: 5px 20px;
+    padding: 10px 20px;
     margin-bottom: 15px;
+    
 }
 
 
