@@ -74,6 +74,13 @@
         margin-top: 25px;
     }
 
+    .itens_servicos:nth-child(2) {
+        transition-delay: 0.2s;
+      }
+      .itens_servicos:nth-child(3) {
+        transition-delay: 0.4s;
+      }
+
     
     .chamada_galeria{
         padding: 0px 20px;

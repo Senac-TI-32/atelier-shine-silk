@@ -89,13 +89,50 @@
     border: 2px solid #f3e5dc;
     border-radius: 2px;
     margin: 15px auto;
+    transition: all 0.3s ease;
 
 }
+
 
 .itens_servicos:hover{
     border: 2px solid #906464;
     transition: all .5s;
 }
+
+/* Estado inicial da imagem (escondida) */
+.animar-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.5s ease-out;
+}
+
+/* Estado quando ela entra na tela (ativa a animação) */
+.animar-scroll.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* Cria o efeito da animação */
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(-10px); /* Sobe 10 pixels */
+  }
+  100% {
+    transform: translateY(0px); /* Volta para a posição inicial */
+  }
+}
+
+/* Aplica a animação nas suas imagens */
+.imagens-otimizadas {
+  /* Nome da animação | Duração (3 segundos) | Movimento suave | Infinita */
+  animation: flutuar 3s ease-in-out infinite; 
+}
+
 
 
 .btn_processo {
