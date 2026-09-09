@@ -1,30 +1,20 @@
-
-// Importa o SweetAlert2 (usando o link de módulo que funciona em qualquer lugar)
-import Swal from 'https://jsdelivr.net';
-
-// Exporta uma função que você pode chamar de qualquer lugar do projeto
-export function exibirAlerta(titulo, mensagem, tipo) {
-    return Swal.fire({
-        title: titulo,
-        text: mensagem,
-        icon: tipo, // 'success', 'error', 'warning', 'info'
-        confirmButtonColor: "#3085d6",
-        confirmButtonText: "Ok"
-    });
-}
-
-
-
-// 1. Importa o SweetAlert2 no topo do arquivo para ele funcionar aqui dentro
-import Swal from 'https://jsdelivr.net';
+// 1. Apenas carrega o arquivo local na raiz
+import '/sweetalert2.js';
 
 let timerInterval;
 
-// 2. Adicione "export" antes da função mensagemEspera
-export function mensagemEspera(titulo, mensagem, tempo){
+export function mensagemEspera(titulo, message, tempo){
+    // Captura o Swal no momento em que a função é executada
+    const Swal = window.Swal; 
+    
+    if (!Swal) {
+        alert(titulo + ": " + message);
+        return;
+    }
+
     Swal.fire({
         title: titulo,
-        html: mensagem,
+        html: message,
         timer: tempo,
         timerProgressBar: true,
         didOpen: () => {
@@ -37,9 +27,18 @@ export function mensagemEspera(titulo, mensagem, tempo){
     });
 }
 
-// 3. Adicione "export" antes da função mensagemGenerica
 export function mensagemGenerica(mensagem){
-    Swal.fire(mensagem);
+    // Captura o Swal no momento do clique do botão enviar
+    const Swal = window.Swal; 
+
+    // Plano B (Fallback): Se a biblioteca falhar por completo, usa o alert comum e não trava o site
+    if (!Swal) {
+        alert(mensagem);
+        return;
+    }
+
+    Swal.fire(mensagem); // <--- Linha 32 corrigida!
+    
     if(timerInterval){
         clearInterval(timerInterval);
     }

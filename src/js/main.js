@@ -1,5 +1,7 @@
 const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter", "rodape"];
 
+import { mensagemGenerica } from './modal_mensagem.js'; 
+
 async function carregarSecoes(nome) {
   // Adicionada a barra '/' no início para funcionar em qualquer servidor
   const secaoHTML = await fetch(`/src/partials/${nome}.html`);
@@ -83,7 +85,7 @@ async function montarPagina() {
 
     // Validação (opcional: veja se quer tornar obrigatório)
     if (!email || !phone || !nome || !mensagem) {
-        alert('Por favor, preencha todos os campos.');
+        mensagemGenerica("Por favor, preencha todos os campos do formulário!");
         return;
     }
 
@@ -110,7 +112,6 @@ async function montarPagina() {
 
 
         alert('Sucesso: ' + confirmacao.mensagem);
-        
         this.reset(); // Limpa o formulário apenas se der certo
 
 
