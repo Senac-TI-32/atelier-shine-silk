@@ -107,8 +107,14 @@ async function montarPagina() {
       const confirmacao = await resultado.json();
 
       if (confirmacao.status) {
+
+
         alert('Sucesso: ' + confirmacao.mensagem);
+        
         this.reset(); // Limpa o formulário apenas se der certo
+
+
+        
       } else {
         alert('Erro no servidor: ' + confirmacao.mensagem);
       }

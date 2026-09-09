@@ -56,9 +56,12 @@ if ($dados) {
     $mail = new PHPMailer(true);
 
     try {
+        //$mail->SMTPDebug = 2;/ Desativado porque o envio já funcionou!
         $mail->isSMTP();
-        $mail->Host       = '://gmail.com';
+        $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
+        
+
         
         // SEU EMAIL DO GMAIL AQUI
         $mail->Username   = 'mauhonorat@gmail.com'; 
@@ -84,12 +87,15 @@ if ($dados) {
             'status' => true, 
             'mensagem' => "Dados de $nome recebidos e email enviado com sucesso!"
         ]);
-    } catch (Exception $e) {
-        echo json_encode([
+
+    }  catch (Exception $e) {
+         echo json_encode([
             'status' => false, 
             'mensagem' => "Erro ao enviar email: {$mail->ErrorInfo}"
         ]);
     }
+
+
 
 } else {
     echo json_encode([
