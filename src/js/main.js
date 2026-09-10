@@ -6,7 +6,7 @@ import { mensagemEspera, mensagemGenerica } from './modal_mensagem.js';
 
 async function carregarSecoes(nome) {
   // Adicionada a barra '/' no início para funcionar em qualquer servidor
-  const secaoHTML = await fetch(`/src/partials/${nome}.html`);
+  const secaoHTML = await fetch(`./src/partials/${nome}.html`);
   document.getElementById(nome).innerHTML = await secaoHTML.text();
 }
 
