@@ -25,3 +25,5 @@ TestResults.xml
 .phpserver/
 *.log
 contatos.txt
+.env    
+vendor/
