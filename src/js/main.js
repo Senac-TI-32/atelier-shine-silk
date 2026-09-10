@@ -1,6 +1,8 @@
+console.log('main.js carregado');
+
 const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter", "rodape"];
 
-//import { mensagemGenerica } from './modal_mensagem.js'; 
+import { mensagemGenerica } from './modal_mensagem.js'; 
 
 async function carregarSecoes(nome) {
   // Adicionada a barra '/' no início para funcionar em qualquer servidor
@@ -84,8 +86,8 @@ async function montarPagina() {
     const mensagem = document.getElementById('mensagem').value;
 
     // Validação (opcional: veja se quer tornar obrigatório)
-    if (!email || !phone || !nome || !mensagem) {
-        alert("Por favor, preencha todos os campos do formulário!");
+    if (email==="" || phone==="" || nome==="" || mensagem==="") {
+      await  mensagemGenerica('Por favor, preencha todos os campos do formulário!');
         return;
     }
 
@@ -97,6 +99,9 @@ async function montarPagina() {
         mensagem: mensagem
     };
 
+    
+
+     
 
 
     try {

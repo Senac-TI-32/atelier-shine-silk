@@ -67,7 +67,7 @@ if ($dados) {
         $mail->Username   = 'mauhonorat@gmail.com'; 
         
         // SUA SENHA DE APLICATIVO DO GMAIL AQUI (sem espaços)
-        $mail->Password   = ''; 
+        $mail->Password   = 'ppjm eoet wanf kzvs'; 
         
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
