@@ -109,7 +109,7 @@ async function montarPagina() {
       });
 
       
-      // mensagemEspera("Aguarde", "Enviando email...", 5000)
+       mensagemEspera("Aguarde", "Enviando email...", 5000)
       const confirmacao = await resultado.json();
       
       if (confirmacao.status) {

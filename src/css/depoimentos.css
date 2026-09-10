@@ -1,6 +1,5 @@
 #depoimentos {
     width: 100%;
-     /* Alinhado com o grid do seu site */
     margin: 0 auto;
     padding: 60px 0;
     box-sizing: border-box;
@@ -8,7 +7,6 @@
 
 .box_depoimentos {
     min-width: 50%;
-     /* IMPEDE QUE OS BLOCOS SE ESPREMAM */
     box-sizing: border-box;
     padding: 40px 30px;
     text-align: center;

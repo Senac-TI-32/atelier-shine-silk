@@ -1,6 +1,7 @@
 #hero {
     margin-top: 200px;
     margin-bottom: 120px;
+   
 }
 
 .container_hero {
@@ -14,6 +15,7 @@
 
 
 
+
 .conteudo_hero {
     color: var(--cor-texto);
     width: 100%;
@@ -22,7 +24,7 @@
 .conteudo_hero img {
     width: 100%;
     box-shadow: 1px 3px 15px #999;
-    border-radius: 0px 20px 0px 20px;
+    border-radius: 15px;
 }
 
 
@@ -35,7 +37,7 @@
 
 
 .titulo_hero {
-    color: var(--nova-cor-destaque);
+    color: var(--cor-texto-alternativa);
     font-size: 2.5rem;
 }
 
