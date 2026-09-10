@@ -780,8 +780,10 @@
     }
 
     .itens_footer {
-        padding: 25px 0px;
+        padding: 25px 15px;
     }
+
+   
 
     .texto_logo_footer {
         width: 100%;
