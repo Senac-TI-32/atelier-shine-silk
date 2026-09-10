@@ -2,7 +2,7 @@ console.log('main.js carregado');
 
 const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos", "newsletter", "rodape"];
 
-import { mensagemGenerica } from './modal_mensagem.js'; 
+import { mensagemEspera, mensagemGenerica } from './modal_mensagem.js'; 
 
 async function carregarSecoes(nome) {
   // Adicionada a barra '/' no início para funcionar em qualquer servidor
@@ -101,9 +101,6 @@ async function montarPagina() {
 
     
 
-     
-
-
     try {
       // Enviando os dados para o seu arquivo PHP na raiz do projeto
       const resultado = await fetch('backend/public/index.php', {
@@ -111,27 +108,29 @@ async function montarPagina() {
         body: JSON.stringify(dados)
       });
 
+      
+      // mensagemEspera("Aguarde", "Enviando email...", 5000)
       const confirmacao = await resultado.json();
-
+      
       if (confirmacao.status) {
 
-
-        alert('Sucesso: ' + confirmacao.mensagem);
-        this.reset(); // Limpa o formulário apenas se der certo
-
+       await mensagemGenerica("Email enviado com sucesso!");
+            clearInterval(timerInterval);
+        this.reset();   // Limpa o formulário apenas se der certo
 
         
       } else {
-        alert('Erro no servidor: ' + confirmacao.mensagem);
+        await mensagemGenerica(` Erro:  ${confirmacao.mensagem}`);
       }
     } catch (erro) {
       console.error("Erro na requisição:", erro);
-      alert('Não foi possível conectar ao servidor PHP.');
+      //await mensagemGenerica('Não foi possível conectar ao servidor PHP.');
     }
   });
 }
 
 montarPagina();
+//mensagemEspera();
 
 
 
