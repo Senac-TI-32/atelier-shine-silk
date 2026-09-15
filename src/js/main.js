@@ -4,9 +4,15 @@ const secoes = ["header", "hero", "servicos", "galeria", "sobre", "depoimentos",
 
 import { mensagemEspera, mensagemGenerica } from './modal_mensagem.js'; 
 
+
+let timerInterval;
+
 async function carregarSecoes(nome) {
   // Adicionada a barra '/' no início para funcionar em qualquer servidor
+  
+
   const secaoHTML = await fetch(`./src/partials/${nome}.html`);
+  
   document.getElementById(nome).innerHTML = await secaoHTML.text();
 }
 
@@ -101,31 +107,34 @@ async function montarPagina() {
 
     
 
-    try {
-      // Enviando os dados para o seu arquivo PHP na raiz do projeto
-      const resultado = await fetch('backend/public/index.php', {
-        method: 'POST', // ou 'GET' dependendo de como você quer enviar os dados
-        body: JSON.stringify(dados)
-      });
-
-      
-       mensagemEspera("Aguarde", "Enviando email...", 5000)
-      const confirmacao = await resultado.json();
-      
-      if (confirmacao.status) {
-
-       await mensagemGenerica("Email enviado com sucesso!");
-            clearInterval(timerInterval);
-        this.reset();   // Limpa o formulário apenas se der certo
-
+      try {
+        // 1. Abre o modal de carregamento
+        mensagemEspera("Aguarde", "Enviando email...", 5000);
+  
+        // 2. FAZ A REQUISIÇÃO (Aqui criamos a variável 'resultado')
+        const resultado = await fetch('backend/public/index.php', {
+          method: 'POST', 
+          body: JSON.stringify(dados)
+        });
+  
+        // 3. PROCESSA O SUCESSO (Aqui usamos a variável 'resultado')
+        const confirmacao = await resultado.json();
         
-      } else {
-        await mensagemGenerica(` Erro:  ${confirmacao.mensagem}`);
+        if (confirmacao.status) {
+          await mensagemGenerica("Email enviado com sucesso!");
+          this.reset();   // Limpa o formulário
+        } else {
+          await mensagemGenerica(` Erro:  ${confirmacao.mensagem}`);
+        }
+      } catch (erro) {
+        console.error("Erro na requisição:", erro);
+        await mensagemGenerica('Não foi possível conectar ao servidor PHP.');
       }
-    } catch (erro) {
-      console.error("Erro na requisição:", erro);
-      //await mensagemGenerica('Não foi possível conectar ao servidor PHP.');
-    }
+  
+  
+
+
+    
   });
 }
 
