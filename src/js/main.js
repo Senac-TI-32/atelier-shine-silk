@@ -116,6 +116,9 @@ async function montarPagina() {
           method: 'POST', 
           body: JSON.stringify(dados)
         });
+
+
+        await new Promise(resolve => setTimeout(resolve, 3000));
   
         // 3. PROCESSA O SUCESSO (Aqui usamos a variável 'resultado')
         const confirmacao = await resultado.json();
