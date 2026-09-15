@@ -107,7 +107,6 @@ async function montarPagina() {
 
     
 
-<<<<<<< HEAD
       try {
         // 1. Abre o modal de carregamento
         mensagemEspera("Aguarde", "Enviando email...", 5000);
@@ -120,25 +119,6 @@ async function montarPagina() {
   
         // 3. PROCESSA O SUCESSO (Aqui usamos a variável 'resultado')
         const confirmacao = await resultado.json();
-=======
-    try {
-      // Enviando os dados para o seu arquivo PHP na raiz do projeto
-      const resultado = await fetch('backend/public/index.php', {
-        method: 'POST', // ou 'GET' dependendo de como você quer enviar os dados
-        body: JSON.stringify(dados)
-      });
-
-      
-      mensagemEspera("Aguarde", "Enviando email...", 5000)
-      const confirmacao = await resultado.json();
-      
-      if (confirmacao.status) {
-
-       await mensagemGenerica("Email enviado com sucesso!");
-            clearInterval(timerInterval);
-        this.reset();   // Limpa o formulário apenas se der certo
-
->>>>>>> 5921a397a1f737f03b5ba1ebbaa47cea657b9ca0
         
         if (confirmacao.status) {
           await mensagemGenerica("Email enviado com sucesso!");
