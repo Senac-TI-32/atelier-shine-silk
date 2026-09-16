@@ -11,3 +11,4 @@ mudar a imagem da hero e sobre (uma pela outra)
 mudar o hover do menu (border bottom)
 mudar a borda divisória do footer
 animar textos e seções
+
