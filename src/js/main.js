@@ -8,11 +8,8 @@ import { mensagemEspera, mensagemGenerica } from './modal_mensagem.js';
 let timerInterval;
 
 async function carregarSecoes(nome) {
-  // Adicionada a barra '/' no início para funcionar em qualquer servidor
-  
-
+  // Mantém sua função original
   const secaoHTML = await fetch(`./src/partials/${nome}.html`);
-  
   document.getElementById(nome).innerHTML = await secaoHTML.text();
 }
 
@@ -24,6 +21,23 @@ async function montarPagina() {
       console.error(e.message);
     }
   }
+
+  // === ADICIONE ESTE BLOCO AQUI ===
+  // Executa após o loop terminar e todas as seções estarem na tela
+  if (window.location.hash) {
+    // Procura o elemento com o ID correspondente ao hash (ex: #servicos)
+    const elementoAlvo = document.querySelector(window.location.hash);
+    
+    if (elementoAlvo) {
+      // Pequeno delay opcional (50ms) apenas para garantir a renderização completa do layout
+      setTimeout(() => {
+        elementoAlvo.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
+    }
+  }
+  // ==================================
+
+
   
 
   

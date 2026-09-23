@@ -806,6 +806,24 @@
         margin: 15px 0px;
         
     }
+
+
+
+    #politica{
+        margin: 150px auto!important;
+       
+    }
+
+
+    .atualizacao {
+        display: block!important;
+        font-size: 14px;
+    }
+
+    .span_escudo {
+        margin: 15px 0px;
+        margin-left: 0px!important;
+    }
     
 
 

@@ -1,0 +1,84 @@
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+  
+
+body{
+    background: #FCFAF8;
+}
+
+
+#politica{
+    margin: 250px auto;
+   
+}
+
+
+.container_politica{
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+}
+
+
+.texto_inicio_politica{
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.titulo_politica{
+    font-size: 45px;
+    color: #4e1b1b;
+    margin-bottom: 20px;
+}
+
+.span_lgpd{
+    text-transform: uppercase;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    background-color:#F5ECE7 ;
+    color: #C4A161;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.atualizacao{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.span_escudo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.texto_principal_politica{
+    margin: 25px 0px;
+    line-height: 2;
+}
+
+.span_img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
