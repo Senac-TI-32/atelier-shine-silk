@@ -8,7 +8,7 @@ async function mensagemEspera(titulo, mensagem, tempo) {
 
     Swal.fire({
         title: titulo,
-        // ✅ Adicionamos <b></b> no HTML para o querySelector encontrar o elemento do contador
+        //  Adicionamos <b></b> no HTML para o querySelector encontrar o elemento do contador
         html: `${mensagem}<br><br>Fechando em <b></b> milissegundos.`,
         timer: tempo,
         timerProgressBar: true,
@@ -17,14 +17,14 @@ async function mensagemEspera(titulo, mensagem, tempo) {
             const timer = Swal.getPopup().querySelector("b");
             
             timerInterval = setInterval(() => {
-                // ✅ Adicionada uma proteção: só atualiza se o elemento 'timer' existir na tela
+                // Adicionada uma proteção: só atualiza se o elemento 'timer' existir na tela
                 if (timer) {
                     timer.textContent = `${Swal.getTimerLeft()}`;
                 }
             }, 100);
         },
         willClose: () => {
-            // ✅ Limpa o timer assim que o modal de espera fechar sozinho ou for fechado
+            //  Limpa o timer assim que o modal de espera fechar sozinho ou for fechado
             clearInterval(timerInterval);
         }
     });
