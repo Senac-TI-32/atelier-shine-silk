@@ -1,37 +1,5 @@
 <?php
 
-/* header("Content-Type: application/json");
-
-// Captura o pacote enviado pelo JS
-$jsonRecebido = file_get_contents("php://input");
-$dados = json_decode($jsonRecebido, true);
-
-if ($dados) {
-    // Captura todas as variáveis com segurança
-    $nome = $dados['nome'];
-    $email = $dados['email'];
-    $phone = $dados['phone'];
-    $mensagem = $dados['mensagem'];
-
-    // Devolve a resposta de sucesso em formato JSON
-    echo json_encode([
-        "status" => true,
-        "mensagem" => "Dados de $nome recebidos com sucesso!"
-    ]);
-} else {
-    echo json_encode([
-        "status" => false,
-        "mensagem" => "Nenhum dado foi recebido pelo servidor."
-    ]);
-}
-
-*/
-
-
-
-
-
-
 header('Content-Type: application/json');
 
 // Importa o PHPMailer (ajuste o caminho se necessário)
@@ -64,7 +32,7 @@ if ($dados) {
 
         
         // SEU EMAIL DO GMAIL AQUI
-        $mail->Username   = 'mauhonorat@gmail.com'; 
+        $mail->Username   = 'shineesilk14@gmail.com'; 
         
         // SUA SENHA DE APLICATIVO DO GMAIL AQUI (sem espaços)
         $mail->Password   = ''; 
@@ -73,8 +41,8 @@ if ($dados) {
         $mail->Port       = 587;
 
         // Remetente e Destinatário
-        $mail->setFrom('mauhonorat@gmail.com', $nome);
-        $mail->addAddress('mauhonorat@gmail.com'); // Onde você quer receber
+        $mail->setFrom('shineesilk14@gmail.com', $nome);
+        $mail->addAddress('shineesilk14@gmail.com'); // Onde você quer receber
 
         // Conteúdo do Email
         $mail->isHTML(true);
