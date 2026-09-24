@@ -44,6 +44,8 @@ h1, h2, h3, strong{
     margin-bottom: 20px;
 }
 
+
+
 .span_lgpd{
     text-transform: uppercase;
     width: 260px;
@@ -125,6 +127,8 @@ h1, h2, h3, strong{
     justify-content: center;
     gap: 10px;
     margin-top: 50px;
+    text-align: center;
+    padding: 5px;
     
 }
 

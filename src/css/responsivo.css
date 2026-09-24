@@ -814,7 +814,11 @@
        
     }
 
+    .texto_inicio_politica,.texto_principal_politica{
+        font-size: .8rem;
+    }   
 
+   
     .atualizacao {
         display: block!important;
         font-size: 14px;
@@ -842,10 +846,14 @@
         font-size: .8rem!important;
     }
 
+    .titulo_h2_clausulas{
+        font-size: 1.2rem;
+    }
+
 
     .box_clausula_1{
-        width: 95%!important;
-        padding: 25px;
+        width: 90%!important;
+        padding: 15px!important;
         border-radius: 10px;
     }
     
