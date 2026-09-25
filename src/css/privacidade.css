@@ -9,6 +9,10 @@
   'opsz' 24
 }
 
+html{
+    scroll-behavior: smooth;
+    
+}
   
 
 body{
